@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Ra&iacute;ces de Bolivia | Cuentos, mitos y leyendas
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="estilo.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark barra">
+   <div class="container">
+    <a class="navbar-brand marca" href="#">
+     <img alt="logo" class="logo" src="logo.png"/>
+     <span>
+      Ra&iacute;ces de Bolivia
+     </span>
+    </a>
+    <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+     <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      <div class="nav-item dropdown">
+       <button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">
+        Categor&iacute;a
+       </button>
+       <ul class="dropdown-menu menu-oscuro">
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="1cuentos.html">
+           Cuentos
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="1mitos.html">
+           Mitos
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="1leyendas.html">
+           Leyendas
+          </a>
+         </button>
+        </li>
+        <li>
+         <hr class="dropdown-divider"/>
+        </li>
+       </ul>
+      </div>
+      <div class="nav-item dropdown">
+       <button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">
+        Departamentos
+       </button>
+       <ul class="dropdown-menu menu-oscuro departamentos">
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dlapaz.html">
+           La Paz
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dscz.html">
+           Santa Cruz
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dcbba.html">
+           Cochabamba
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Doruro.html">
+           Oruro
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dpotosi.html">
+           Potos&iacute;
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dchuquisaca.html">
+           Chuquisaca
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dtarija.html">
+           Tarija
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dbeni.html">
+           Beni
+          </a>
+         </button>
+        </li>
+        <li>
+         <button class="dropdown-item">
+          <a class="dropdown-item" href="Dpando.html">
+           Pando
+          </a>
+         </button>
+        </li>
+        <li>
+         <hr class="dropdown-divider"/>
+        </li>
+       </ul>
+      </div>
+      <button">
+       <a class="btn boton-nav" href="3audiolibro.html">
+        🎧 Audiolibros
+       </a>
+      </button">
+     </div>
+    </div>
+   </div>
+  </nav>
+  <!-- Portada -->
+  <header class="portada">
+   <div class="capa">
+   </div>
+   <div class="container contenido-portada">
+    <center>
+     <p class="bienvenida">
+      Historias que viven en nuestra memoria
+     </p>
+     <h1>
+      Cuentos, mitos y
+      <br/>
+      <span>
+       leyendas bolivianas
+      </span>
+     </h1>
+     <p class="texto-portada">
+      Descubre las historias ancestrales que viven en la memoria de nuestros pueblos.
+     </p>
+    </center>
+   </div>
+  </header>
+  <!-- Buscador -->
+  <section class="container buscador-seccion">
+   <div class="buscador">
+    <span class="lupa">
+     &telrec;
+    </span>
+    <input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+    <button class="btn boton-buscar" onclick="buscarHistorias()">
+     Buscar
+    </button>
+   </div>
+   <p class="mensaje" id="mensaje">
+   </p>
+   <div id="resultados-busqueda">
+   </div>
+  </section>
+  <!-- Historias destacadas -->
+  <main class="container seccion" id="destacados">
+   <div class="titulo-seccion">
+    <p class="sobre-titulo">
+     Un legado de generaci&oacute;n en generaci&oacute;n
+    </p>
+    <h2>
+     Historias destacadas
+    </h2>
+    <p>
+     Descubre cuentos, mitos y leyendas que conservan la memoria y las tradiciones de los pueblos de Bolivia.
+    </p>
+    <div class="adorno">
+    </div>
+   </div>
+   <div class="row g-4" id="tarjetas">
+    <!--R1-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-1">
+       <span class="etiqueta">
+        Departamento &middot; Santa Cuz
+       </span>
+       <span class="icono-imagen">
+       </span>
+       🌳
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        El secreto del bosque
+       </h3>
+       <p>
+        En las afueras de Santa Cruz de la Sierra...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A1" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          El secreto del bosque
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          En las afueras de Santa Cruz de la Sierra, donde el abrazo de la llanura se funde con la espesura del monte chiquitano, viv&iacute;a un muchacho llamado Mateo. Era un joven de ojos avispados y esp&iacute;ritu inquieto, fascinado por las historias que contaban los abuelos al calor del fog&oacute;n sobre los misterios de la selva: el Jichi protector de las aguas, el Duende travieso y, sobre todo, el misterioso &laquo;Secreto del Bosque&raquo;.
+Muchos dec&iacute;an que en lo m&aacute;s profundo de la floresta, donde los rayos del sol apenas rozaban el suelo cubierto de musgo, exist&iacute;a un tesoro incalculable dejado por los antiguos pobladores. Movido por la ambici&oacute;n de encontrar riquezas y probar su valent&iacute;a, Mateo decidi&oacute; una ma&ntilde;ana emprender una traves&iacute;a en solitario, cargando solo su machete, una cantimplora y un morral de tela.
+Al adentrarse en el monte, el bullicio de la ciudad se apag&oacute; por completo, reemplazado por la sinfon&iacute;a natural de las chicharras, el graznido de las coloridas parabas y el crujir de las ramas bajo sus pisadas. Los gigantescos tajibos florecidos en tonos rosados y amarillos, junto a los imponentes toborochis de troncos panzones, formaban una b&oacute;veda verde que parec&iacute;a vigilar cada uno de sus pasos.Mateo camin&oacute; durante horas siguiendo un sendero que parec&iacute;a desvanecerse a medida que avanzaba. El aire se torn&oacute; m&aacute;s fresco y h&uacute;medo, y el canto de las aves dio paso a un silencio reverente. Sin darse cuenta, el sol comenz&oacute; a descender por el horizonte, ti&ntilde;endo el cielo cruce&ntilde;o de intensos tonos anaranjados y p&uacute;rpuras. Las sombras se alargaron y el fr&iacute;o de la noche tropical empez&oacute; a colarse entre los matorrales.
+El miedo comenz&oacute; a helarle la sangre al muchacho. Estaba perdido. Las siluetas de los &aacute;rboles parec&iacute;an monstruos amenazantes y el camino de regreso ya no exist&iacute;a. Recordando entonces las advertencias de su abuelo &mdash;que el monte no perdona a quien entra con codicia ni a quien le falta el respeto&mdash;, Mateo se arrodill&oacute; junto a la ra&iacute;z de un viejo cusi, arrepentido de su soberbia.
+En ese preciso instante, una suave brisa arom&aacute;tica a azahares y tierra mojada recorri&oacute; el lugar. Una luz tenue y c&aacute;lida comenz&oacute; a emanar del follaje, y frente a &eacute;l apareci&oacute; el Guardi&aacute;n del Monte: una figura et&eacute;rea y serena, con vestiduras tejidas de hojas y enredaderas, reflejando la esencia viva de la selva.
+&mdash;&iquest;Qu&eacute; buscas en mis dominios, muchacho? &mdash;pregunt&oacute; la voz del Guardi&aacute;n, que resonaba como el fluir de un arroyo lejano.
+Con la voz temblorosa, Mateo confes&oacute;:
+&mdash;Buscaba oro y riquezas, creyendo que el secreto del bosque era un tesoro oculto bajo la tierra. Ahora solo quiero volver a casa.
+El Guardi&aacute;n sonri&oacute; con una profunda sabidur&iacute;a y le respondi&oacute; con gentileza:
+&mdash;Los hombres siempre buscan oro, sin entender que la verdadera riqueza es la vida misma. El secreto del bosque no es un tesoro material, Mateo. El secreto es que este monte es un ser vivo que respira, siente y sostiene a todo nuestro pueblo. Cada &aacute;rbol, cada animal, cada gota de agua y cada soplo de viento forman un solo latido. Quien da&ntilde;a una parte, destruye el todo; pero quien aprende a amarlo y respetarlo, nunca estar&aacute; perdido, porque el bosque siempre lo cuidar&aacute;.
+Al terminar estas palabras, el Guardi&aacute;n agit&oacute; sus manos y una estela luminosa ilumin&oacute; un sendero claro y directo que conduc&iacute;a fuera de la espesura.
+Al amanecer, Mateo despert&oacute; cerca de los linderos de su pueblo, con el canto de los gallos y el sol de la ma&ntilde;ana acarici&aacute;ndole el rostro. Ya no llevaba oro en las manos, pero su coraz&oacute;n y su mente hab&iacute;an cambiado para siempre. Hab&iacute;a comprendido el verdadero secreto de la tierra cruce&ntilde;a: que la mayor fortuna de Santa Cruz reside en la grandeza indomable y sagrada de su naturaleza.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--R2-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-2">
+       <span class="etiqueta">
+        Departamento &middot; La Paz
+       </span>
+       <span class="icono-imagen">
+       </span>
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        El c&oacute;ndor y el zorro
+       </h3>
+       <p>
+        Hab&iacute;a una vez, en las altas punas andinas, un c&oacute;ndor llamado Teodoro...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A2" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          El c&oacute;ndor y el zorro
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          Hab&iacute;a una vez, en las altas punas andinas, un c&oacute;ndor llamado Teodoro y un zorro conocido como el compadre Mariano. Aunque de naturalezas muy distintas, a menudo se encontraban para charlar y compartir historias del cerro.
+&ZeroWidthSpace;Un d&iacute;a, mientras el c&oacute;ndor devoraba con calma los restos de un animal sobre las rocas, el zorro se le acerc&oacute; trotando, con la cola levantada y aire presuntuoso.
+&ZeroWidthSpace;&mdash;&iexcl;Buenos d&iacute;as, compadre Teodoro! &mdash;salud&oacute; el zorro&mdash;. Lo veo almorzando temprano.
+&mdash;Buenos d&iacute;as, compadre Mariano &mdash;respondi&oacute; el c&oacute;ndor&mdash;. Hay que alimentarse bien, pues el viento de las cumbres sopla helado y el invierno ya se siente en los huesos.
+&ZeroWidthSpace;El zorro, que no soportaba que nadie se creyera superior a &eacute;l en astucia o resistencia, solt&oacute; una carcajada:
+&ZeroWidthSpace;&mdash;&iexcl;Ja, ja, ja! &iquest;Fr&iacute;o dice, compadre? &iexcl;Por favor! Con este hermoso y tupido pelaje que tenemos los zorros, nosotros podemos soportar cualquier clima, incluso en las cumbres m&aacute;s altas e inh&oacute;spitas donde usted habita. Para m&iacute; el fr&iacute;o no es nada.
+&ZeroWidthSpace;El c&oacute;ndor sacudi&oacute; sus imponentes alas negras, lo mir&oacute; con calma y replic&oacute;:
+&ZeroWidthSpace;&mdash;No hables con tanta ligereza, compadre. En la cima de los nevados, cuando cae la noche y la tormenta ruge, el fr&iacute;o no es un juego: es capaz de congelar la sangre de cualquier criatura que no pertenezca a las alturas.
+&ZeroWidthSpace;Picado en su orgullo, el zorro desafi&oacute; al soberano de los cielos:
+&ZeroWidthSpace;&mdash;&iquest;Ah, s&iacute;? &iexcl;Le apuesto lo que quiera a que puedo pasar una noche entera en la punta m&aacute;s alta del cerro nevado sin congelarme! Hagamos un trato: los dos subiremos esta noche a la cumbre m&aacute;s elevada. El que muera de fr&iacute;o o se rinda primero, ser&aacute; el almuerzo del otro.
+&ZeroWidthSpace;El c&oacute;ndor, conociendo el rigor de los Andes pero aceptando la palabra empa&ntilde;ada, asinti&oacute;:
+&mdash;Aceptado, compadre. Nos vemos al anochecer en la cima.
+&ZeroWidthSpace;Llegada la noche, las nubes oscuras cubrieron el cielo y empez&oacute; a caer una helada feroz acompa&ntilde;ada de nieve y un viento helador. Los dos compadres se acomodaron en la cima rocosa del cerro.
+&ZeroWidthSpace;El c&oacute;ndor se par&oacute; firme sobre una pe&ntilde;a, encogi&oacute; el cuello, abri&oacute; una de sus enormes alas para cobijarse el cuerpo y us&oacute; la otra como manta protectora, dejando que el agua y la nieve resbalaran por sus plumas impermeables.
+&ZeroWidthSpace;El zorro, en cambio, se ech&oacute; en el suelo congelado, encogi&eacute;ndose y tratando de taparse el hocico y las patas con su frondosa cola.
+&ZeroWidthSpace;A mitad de la noche, el fr&iacute;o era implacable. El c&oacute;ndor, para comprobar c&oacute;mo iba su compadre, le grit&oacute; entre la ventisca:
+&mdash;&iexcl;Compadre Mariano! &iquest;C&oacute;mo est&aacute;s? &iquest;Tienes fr&iacute;o?
+&ZeroWidthSpace;El zorro, temblando convulsivamente y con los dientes casta&ntilde;eando, sac&oacute; fuerzas de su orgullo y respondi&oacute;:
+&mdash;&iexcl;Alal&aacute;u... alal&aacute;u! &iquest;Cu&aacute;ndo un macho ha de tener fr&iacute;o? &iexcl;Estoy muy bien, compadre! &iquest;Y usted?
+&ZeroWidthSpace;&mdash;&iexcl;Huarara&uacute;! &iexcl;Aqu&iacute; resistiendo como siempre! &mdash;contest&oacute; el c&oacute;ndor con voz firme.
+&ZeroWidthSpace;Pasaron las horas y la tempestad se hizo cada vez m&aacute;s inclemente. Ya cerca de la madrugada, el c&oacute;ndor volvi&oacute; a llamar:
+&mdash;&iexcl;Compadre Mariano! &iquest;A&uacute;n aguantas el fr&iacute;o?
+&ZeroWidthSpace;Esta vez la respuesta del zorro apenas fue un murmullo ag&oacute;nico entre el viento:
+&mdash;Chiri... chiri... alal&aacute;u... (&iexcl;Fr&iacute;o... fr&iacute;o... me muero de fr&iacute;o!).
+&ZeroWidthSpace;Al salir el sol, el cielo se despej&oacute; y los primeros rayos iluminaron la cumbre nevada. El c&oacute;ndor se sacudi&oacute; la nieve del plumaje, extendi&oacute; sus alas para calentarse y busc&oacute; a su compadre. All&iacute; estaba el zorro Mariano, completamente tieso y congelado por la escarcha, v&iacute;ctima de su propia vanidad y arrogancia.
+&ZeroWidthSpace;Cumpliendo el trato acordado entre los hombres del monte, el c&oacute;ndor se aliment&oacute; y luego emprendi&oacute; un majestuoso vuelo en espiral hacia el cielo infinito, dejando en la cordillera la eterna lecci&oacute;n de que la arrogancia y la presunci&oacute;n nunca pueden vencer a las leyes de la naturaleza.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--R3-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-3">
+       <span class="etiqueta">
+        Departamento &middot; Potosi
+       </span>
+       <span class="icono-imagen">
+       </span>
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        El origen de la luna
+       </h3>
+       <p>
+        Cuentan los abuelitos de los ayllus y comarcas...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A3" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A3" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          El origen de la luna
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          Cuentan los abuelitos de los ayllus y comarcas potosinas que en tiempos primigenios, cuando la Tierra a&uacute;n era joven, el cielo sobre el Cerro Rico y la alta cordillera estaba sumergido en una oscuridad helada e infinita durante las noches. No exist&iacute;a estrella alguna ni astro que alumbrara los senderos de los caminantes.
+En un peque&ntilde;o poblado a las faldas de las monta&ntilde;as viv&iacute;a una joven llamada Killa, conocida en toda la regi&oacute;n por la pureza de su alma, la amabilidad de su coraz&oacute;n y una sonrisa tan tibia que era capaz de reconfortar a cualquiera en los d&iacute;as m&aacute;s fr&iacute;os del altiplano.
+Una noche de invierno, una terrible sombra m&iacute;stica azot&oacute; a la comunidad. Era un fr&iacute;o del inframundo que amenazaba con congelar los sembrad&iacute;os, los manantiales de agua y los corazones de los habitantes. Los sabios del pueblo se reunieron alrededor del fuego sagrado y revelaron la &uacute;nica soluci&oacute;n: la monta&ntilde;a exig&iacute;a el alma m&aacute;s pura para convertirla en una luz eterna que protegiera al pueblo de la oscuridad y del fr&iacute;o invernal.
+Killa, al ver el sufrimiento de su familia y la aflicci&oacute;n de su pueblo, no dud&oacute;. Con valent&iacute;a y amor por su gente, decidi&oacute; subir sola hacia la cima m&aacute;s elevada del nevado potosino, llevando consigo &uacute;nicamente su manta (lliklla) de lana blanca y sus oraciones a la Pachamama.
+A medida que ascend&iacute;a entre la ventisca y las rocas congeladas, el viento intentaba detenerla, pero la fuerza de su coraz&oacute;n era m&aacute;s grande. Al llegar a la c&uacute;spide m&aacute;s alta, rozando las nubes, Killa extendi&oacute; sus brazos al cielo y ofreci&oacute; su esp&iacute;ritu al universo.
+En ese instante sagrado, su cuerpo se volvi&oacute; ligero y comenz&oacute; a elevarse hacia la inmensidad del firmamento. Su manta blanca se despleg&oacute; como un gran c&iacute;rculo plateado y brillante. Killa se transform&oacute; en un astro de luz suave, serena y protectora: la Luna (Phaxsi o Killa en nuestras lenguas originarias).
+Desde aquella noche, la Luna ilumina los valles, los ca&ntilde;ones y las cumbres de Potos&iacute;, alejando las tinieblas y cuidando el sue&ntilde;o de los hombres y mujeres del altiplano. Y dicen las tradiciones que cuando la Luna se ti&ntilde;e de tonos dorados o rojizos, es porque Killa est&aacute; recordando con cari&ntilde;o las calurosas tierras potosinas que la vieron nacer.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--R4-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-4">
+       <span class="etiqueta">
+        Departamento &middot; Oruro
+       </span>
+       <span class="icono-imagen">
+       </span>
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        Layenda del Sajama
+       </h3>
+       <p>
+        Cuentan los abuelos que en el principio de los tiempos...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A4" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A4" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          Layenda del Sajama
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          Cuentan los abuelos que en el principio de los tiempos, los grandes nevados de la Cordillera Real eran dioses gigantes (Mallkus) que viv&iacute;an en la superficie de la Tierra. Entre todos ellos, el rey indiscutible era Mururata, un gigante vanidoso, soberbio y de estatura colosal, cuya cumbre era tan alta que tapaba la luz del sol al resto de las monta&ntilde;as.
+Mururata se jactaba constantemente de su tama&ntilde;o y humillaba a las dem&aacute;s monta&ntilde;as. Cansado de sus ofensas y arrebato de soberbia, el dios Illimani, otra de las imponentes deidades del altiplano, decidi&oacute; ponerle fin a tanta arrogancia.
+Se desat&oacute; entonces una batalla &eacute;pica entre los gigantes de piedra y hielo. La tierra tembl&oacute;, los cielos se oscurecieron y los rayos cruzaron la cordillera. En medio del combate, Illimani us&oacute; una honda divina (korawha) hecha de rayos y lanz&oacute; una gigantesca piedra cortante hacia la cabeza de Mururata.
+El impacto fue directo e implacable: la fuerza del golpe decapit&oacute; por completo al soberbio Mururata. Su cabeza sali&oacute; volando por los aires cruzando leguas y leguas sobre la vasta llanura del altiplano, hasta caer con un estruendo ensordecedor en medio de las tierras des&eacute;rticas de la regi&oacute;n de Oruro.
+Al quedar varada en la inmensidad del altiplano, la cabeza del gigante cobr&oacute; vida propia y adopt&oacute; el nombre de Sajama (que proviene de las palabras aymaras Sar&auml;ma, que significa &laquo;el que est&aacute; solo&raquo; o &laquo;el apartado&raquo;).
+Aislado de los dem&aacute;s gigantes y arrepentido por las guerras del pasado, el Sajama decidi&oacute; convertirse en el gran protector y sanador de la regi&oacute;n. De sus entra&ntilde;as hizo brotar aguas termales curativas y un ecosistema &uacute;nico con los bosques de que&ntilde;uas m&aacute;s altos del mundo, para dar cobijo, alimento y refugio a las vicu&ntilde;as, llamas y a los hombres y mujeres que habitan la dura puna.
+Por su parte, el cuerpo cercenado del gigante qued&oacute; en la cordillera Pace&ntilde;a y pas&oacute; a llamarse Mururata (&laquo;el decapitado&raquo;), caracterizado hasta el d&iacute;a de hoy por su cima plana y achatada, recordando a todos los hombres la lecci&oacute;n de que la soberbia siempre tiene un precio.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--R5-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-5">
+       <span class="etiqueta">
+        Departamento &middot; Beni
+       </span>
+       <span class="icono-imagen">
+       </span>
+       🌳
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        El espiritu del rio
+       </h3>
+       <p>
+        En una tranquila comunidad a orillas del majestuoso...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A5" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A5" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          El espiritu del rio
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          En una tranquila comunidad a orillas del majestuoso r&iacute;o Mamor&eacute;, viv&iacute;a un joven llamado Yuma. Desde muy ni&ntilde;o, Yuma hab&iacute;a crecido escuchando las advertencias de los ancianos sobre los misterios de la selva y la inmensidad de los r&iacute;os. Le contaban que los cursos de agua no eran simple corriente, sino la sangre viva de la Amazon&iacute;a, custodiada por una entidad ancestral conocida como el Jichi o el Esp&iacute;ritu del R&iacute;o.
+Este esp&iacute;ritu tomaba la forma de una serpiente m&iacute;tica gigantesca o de una luz brillante bajo el agua, y su tarea era velar por el equilibrio del ecosistema: cuidar a los peces, mantener limpias las aguas y proteger el cauce del r&iacute;o de la codicia humana.
+Un a&ntilde;o, la comunidad atraves&oacute; una &eacute;poca de gran escasez. Los peces comenzaban a ahuyentarse y el calor abrasador reduc&iacute;a el caudal de los arroyos. Llevado por el desespero y el deseo de destacar entre los pescadores, Yuma decidi&oacute; adentrarse solo hasta un recodo del r&iacute;o al que ning&uacute;n anciano se atrev&iacute;a a ir: la llamada Poza Oscura, un lugar profundo rodeado de frondosos mapajos y guapayales.
+Sin pedir permiso al r&iacute;o ni realizar las tradicionales ofrendas de respeto, Yuma arroj&oacute; sus redes y barbasco de forma indiscriminada, atrapando peces grandes y peque&ntilde;os por igual sin importarle el ma&ntilde;ana.
+De pronto, el agua apacible comenz&oacute; a agitarse con violencia. Un remolino espumoso emergi&oacute; del centro de la poza y el cielo diurno se cubri&oacute; de densas nubes oscuras. El aire se volvi&oacute; pesado y un silbido agudo retumb&oacute; desde las profundidades del agua.
+Frente a la canoa de Yuma, la corriente se levant&oacute; formando una masa de agua cristalina con ojos resplandecientes como esmeraldas y escamas de luz: el Esp&iacute;ritu del R&iacute;o se hab&iacute;a manifestado.
+&mdash;&laquo;&iquest;Por qu&eacute; entras a mi morada con avaricia, joven humano?&raquo; &mdash;reson&oacute; una voz que retumbaba como el trueno en la selva&mdash;. &laquo;Llevas m&aacute;s de lo que necesitas y lastimas a los seres que mantienen con vida esta corriente. Si destruyes el r&iacute;o, te destruyes a ti mismo y a tu pueblo&raquo;.
+Yuma, paralizado de miedo y con el coraz&oacute;n latiendo desbocado, solt&oacute; las redes y cay&oacute; de rodillas en su peque&ntilde;a embarcaci&oacute;n. Comprendi&oacute; en ese instante la imprudencia de sus actos y el peligro en el que hab&iacute;a puesto no solo su vida, sino la de toda su comunidad.
+&mdash;&laquo;Perd&oacute;name, Gran Esp&iacute;ritu&raquo; &mdash;suplic&oacute; el joven con voz temblorosa&mdash;. &laquo;He actuado movido por la desesperaci&oacute;n y el orgullo. Prometo no volver a tomar del r&iacute;o m&aacute;s de lo necesario y ense&ntilde;ar a mi pueblo a cuidar cada gota de agua&raquo;.
+El guardi&aacute;n de las aguas lo observ&oacute; fijamente. Al notar la sinceridad y el arrepentimiento genuino en el coraz&oacute;n de Yuma, la tormenta comenz&oacute; a amainar y el remolino se desvaneci&oacute; lentamente.
+&mdash;&laquo;Que tu promesa se cumpla, muchacho. Recuerda siempre que el r&iacute;o da vida, pero solo a quienes caminan en armon&iacute;a con &eacute;l&raquo; &mdash;fueron las &uacute;ltimas palabras que el esp&iacute;ritu dej&oacute; flotando en el viento antes de sumergirse nuevamente en las honduras del Mamor&eacute;.
+Desde aquel d&iacute;a, Yuma se convirti&oacute; en el principal protector de las cuencas y lagunas de su tierra. Ense&ntilde;o a las nuevas generaciones a pescar con respeto, a cuidar las orillas y a no tomar jam&aacute;s de la naturaleza m&aacute;s de lo que se necesita. Y cuentan los pobladores del Beni que, hasta el d&iacute;a de hoy, en las noches tranquilas de luna llena, se puede ver un suave resplandor plateado desliz&aacute;ndose por las aguas, recordando a todos que el Esp&iacute;ritu del R&iacute;o sigue vigilante y protegiendo la Amazon&iacute;a.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--R6-->
+    <div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+     <article class="tarjeta">
+      <div class="imagen imagen-6">
+       <span class="etiqueta">
+        Departamento &middot; Pando
+       </span>
+       <span class="icono-imagen">
+       </span>
+      </div>
+      <div class="tarjeta-cuerpo">
+       <h3>
+        El Guajojo
+       </h3>
+       <p>
+        En los tiempos en que la selva amaz&oacute;nica no ten&iacute;a due&ntilde;o ni caminos...
+       </p>
+       <button class="btn boton-leer" data-bs-target="#A6" data-bs-toggle="modal">
+        Conocer historia
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </div>
+     </article>
+     <!-- Ventana del cuento -->
+     <div class="modal fade" id="A6" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+       <div class="modal-content bg-dark text-warning">
+        <div class="modal-header">
+         <h5 class="modal-title">
+          El Guajojo
+         </h5>
+         <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+         </button>
+        </div>
+        <div class="modal-body text-light">
+         <p style="text-align: justify;">
+          En los tiempos en que la selva amaz&oacute;nica no ten&iacute;a due&ntilde;o ni caminos, habitaba en un poblado de la Amazon&iacute;a boliviana una hermosa joven, hija del cacique de la tribu. &Eacute;l no solo era el l&iacute;der respetado de la comunidad, sino tambi&eacute;n un poderoso hechicero conocedor de los secretos de la magia negra y de las plantas del monte. La muchacha era de una belleza singular y dulce trato, y su coraz&oacute;n pertenec&iacute;a a un joven guerrero de la misma tribu, valiente, noble y gran cazador. Ambos se amaban apasionadamente, pero sab&iacute;an que el cacique era un hombre soberbio y severo que jam&aacute;s aceptar&iacute;a que su hija se uniera a un guerrero com&uacute;n, pues so&ntilde;aba para ella con una alianza de mayor poder. Por esta raz&oacute;n, los amantes se citaban en la penumbra de la selva a escondidas, lejos de las miradas del pueblo.
+Los constantes encuentros furtivos levantaron sospechas en el cacique. Decidido a descubrir la verdad, una tarde sigui&oacute; a su hija en silencio hasta la espesura y los sorprendi&oacute; en un c&aacute;lido abrazo. La furia del hechicero fue ciega. Disimulando su rabia en ese instante para no delatarse frente a su hija, esper&oacute; a que la joven regresara al poblado. Al d&iacute;a siguiente, el cacique busc&oacute; al muchacho y le pidi&oacute; que lo acompa&ntilde;ara a lo profundo de la selva con el pretexto de ayudarlo a cazar una presa dif&iacute;cil. Una vez alejados y solos en la densidad del monte, el hechicero encar&oacute; al guerrero. Sin darle tiempo a defenderse, le atraves&oacute; el pecho con su lanza, quit&aacute;ndole la vida de manera instant&aacute;nea. Para ocultar su crimen, abandon&oacute; el cad&aacute;ver en la selva, cubri&eacute;ndolo apenas con la hojarasca del suelo.
+Al caer la noche y ver que su amado no regresaba ni respond&iacute;a a sus llamadas, la joven presinti&oacute; lo peor. Llena de angustia, se adentr&oacute; sola en la selva, siguiendo las huellas y los rastros de la vegetaci&oacute;n cortada. Camin&oacute; durante horas bajo la penumbra de los &aacute;rboles hasta que sus ojos se toparon con la tr&aacute;gica escena: el cuerpo sin vida de su enamorado yac&iacute;a ensangrentado bajo las ramas. Destrozada por el dolor, cay&oacute; de rodillas al lado del cad&aacute;ver, llorando desconsoladamente y abrazando su cuerpo fr&iacute;o. En medio de su lamento, not&oacute; la huella de la lanza y reconoci&oacute; el distintivo del arma de su padre. Comprendi&oacute; de inmediato qui&eacute;n era el culpable.
+Ciega de rabia y dolor, corri&oacute; de regreso al poblado y encar&oacute; a su padre ante toda la tribu, grit&aacute;ndole su crimen y amenaz&aacute;ndolo con revelar la atrocidad a los ancianos para que fuera desterrado y castigado. El cacique, viendo amenazada su autoridad y temiendo la verg&uuml;enza, decidi&oacute; silenciar a su propia hija para siempre. Sin embargo, no quiso derramar su sangre con armas. En lugar de eso, alz&oacute; sus manos, comenz&oacute; a recitar un oscuro e inteligible conjuro y lanz&oacute; sobre la joven la fuerza de su magia negra.
+Justo cuando la muchacha abr&iacute;a la boca para lanzar un desgarrador grito de ayuda y dolor, su cuerpo comenz&oacute; a transformarse bruscamente. Sus brazos se convirtieron en alas de plumaje pardo y gris&aacute;ceo, sus piernas se encogieron, su tez se volvi&oacute; pluma y su boca se endureci&oacute; hasta formar un pico. El grito de auxilio que la joven intent&oacute; emitir no lleg&oacute; a salir como voz humana: brot&oacute; de su garganta como un silbido prolongado, f&uacute;nebre y agudo, lleno de un sufrimiento insoportable. Convertida en un ave nocturna de aspecto triste, ech&oacute; a volar aterrada hacia lo m&aacute;s alto y tupido de la copa de los &aacute;rboles, perdi&eacute;ndose en la noche.
+Desde aquella tr&aacute;gica noche, la joven habita en las selvas de Bolivia transformada en el Guajoj&oacute;. Cuenta la leyenda que el ave permanece oculta durante el d&iacute;a, mimetiz&aacute;ndose perfectamente con la corteza de los &aacute;rboles secos para no ser vista. Pero cuando cae la noche, en la soledad de la selva, rompe el silencio con su canto: un gemido triste, descendente y melanc&oacute;lico que imita a la perfecci&oacute;n el llanto de una mujer que llora la muerte de su gran amor. Quienes caminan de noche por los montes bolivianos afirman que escuchar el lamento del Guajoj&oacute; hiela la sangre, y en la creencia popular se dice que su canto cercano es un anuncio inminente de desgracia, enfermedad o muerte.
+         </p>
+        </div>
+        <div class="modal-footer">
+         <button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+          Cerrar cuento
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <p class="text-center mt-4" hidden="" id="sin-resultados">
+    No encontramos historias con esa b&uacute;squeda.
+   </p>
+  </main>
+  <!-- Reproductor de audio: se abre al presionar el botón -->
+  <section class="container audio-seccion" id="audio">
+   <div class="audio-caja">
+    <div class="audio-icono">
+     🎧
+    </div>
+    <div class="audio-texto">
+     <p class="sobre-titulo">
+      ESCUCHA Y DISFRUTA
+     </p>
+     <h2>
+      El c&oacute;ndor que se enamor&oacute; de una pastora
+     </h2>
+     <p>
+      Presiona reproducir cuando quieras escuchar.
+     </p>
+     <audio controls="" id="reproductor">
+      <source src="Aaudio4.mp3" type="audio/mpeg"/>
+      Tu navegador no puede reproducir audio.
+     </audio>
+    </div>
+   </div>
+  </section>
+  <!-- Pie de página -->
+  <footer class="pie">
+   <div class="container pie-contenido">
+    <div>
+     <a class="marca pie-marca" href="#">
+      <img alt="logo" class="logo" src="logo.png"/>
+      Ra&iacute;ces de Bolivia
+     </a>
+     <p>
+      Preservando los cuentos, mitos y leyendas de nuestra tierra.
+     </p>
+    </div>
+    <p class="copyright">
+     &copy; 2026 Ra&iacute;ces de Bolivia &middot; Cultura que vive en nuestras historias
+    </p>
+   </div>
+   <div class="redes-sociales">
+    <a class="facebook" href="https://www.facebook.com/1339926532539758" target="_blank">
+     <i class="bi bi-facebook">
+     </i>
+     <span>
+      Facebook
+     </span>
+    </a>
+    <a class="instagram" href="https://www.instagram.com/raic.esdebolivia" target="_blank">
+     <i class="bi bi-instagram">
+     </i>
+     <span>
+      Instagram
+     </span>
+    </a>
+   </div>
+  </footer>
+  <!-- Ventana para mostrar una historia -->
+  <div class="modal fade" id="ventanaHistoria" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-oscuro">
+     <div class="modal-header">
+      <h5 class="modal-title" id="tituloHistoria">
+       Historia
+      </h5>
+      <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body" id="textoHistoria">
+     </div>
+     <div class="modal-footer">
+      <button class="btn boton-nav" data-bs-dismiss="modal">
+       Cerrar
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="search-index.js">
+  </script>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

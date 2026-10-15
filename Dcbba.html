@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1cbba.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Historias que florecen entre montañas y valles</p>
+<h1><span>COCHABAMBA</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Cochabamba.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Historias que florecen entre montañas y valles</p>
+<h2>Cuentos y tradiciones de Cochabamba</h2>
+<p>Explora relatos populares, personajes curiosos y enseñanzas transmitidas de generación en generación.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--cuento 4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-camino-que-se-hac-a-solo">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-camino-que-se-hac-a-solo-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El camino que se hacía solo</h3>
+<p>En las montañas de Totora, hay un sendero que aparece y desaparece...</p>
+<button class="btn boton-leer" data-bs-target="#cuento4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El camino que se hacía solo</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las montañas de Totora, hay un sendero que aparece y desaparece según quien lo transite. Cuentan que un campesino anciano caminaba cargado de leña cuando vio a un viajero perdido y cansado que no encontraba el rumbo. Sin dudarlo, el anciano dejó su carga y lo guió hasta el pueblo. Al regresar, notó que el camino que habían tomado se había ensanchado y suavizado. Al día siguiente, otros intentaron usarlo pero el sendero se había vuelto estrecho y difícil. Comprendieron entonces que el camino no es algo que está ahí afuera, sino algo que se construye con cada acto de bondad.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuento5-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="elas-semillas-que-cantaban-bajo-tierra-cochabamba.svg">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('elas-semillas-que-cantaban-bajo-tierra-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>Las semillas que cantaban bajo tierra</h3>
+<p>Antes de sembrar, los abuelos de Cochabamba cantaban...</p>
+<button class="btn boton-leer" data-bs-target="#cuento5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">Las semillas que cantaban bajo tierra</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Antes de sembrar, los abuelos de Cochabamba cantaban a las semillas antes de entregarlas a la tierra. Un joven que no entendía esto pensó que era una pérdida de tiempo y sembró sin cantar. Cuando brotaron, sus plantas crecieron altas pero no dieron fruto. Avergonzado, fue a ver a su abuelo y le preguntó qué había hecho mal. El anciano le dijo: "La tierra no solo necesita semillas, necesita saber que alguien las espera con cariño. Canta antes de sembrar, no porque la tierra tenga oídos, sino porque tu corazón necesita recordar que lo que das, vuelve a ti". El joven lo hizo así al año siguiente, y su cosecha fue la más abundante de toda la región.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda9-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-que-se-neg-a-secarse">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-que-se-neg-a-secarse-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna que se negó a secarse</h3>
+<p>En los cerros de Tiquipaya existe una pequeña laguna...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda9" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda9" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna que se negó a secarse</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los cerros de Tiquipaya existe una pequeña laguna que, a pesar de los años de sequía, nunca ha desaparecido. Cuentan que hace mucho tiempo, una comunidad decidió desviar sus aguas para ampliar los sembradíos. Cuando empezaron a cavar el canal, el agua de la laguna se elevó suavemente como una pared transparente y una voz clara dijo: "Si me repartís para tener más, todo se secará y no tendréis nada". Los campesinos se detuvieron. Comprendieron que la laguna no era suya para repartir, sino un regalo compartido. Desde entonces, solo toman lo que el agua les permite devolver, y la laguna sigue ahí, enseñando que compartir no es dividir, sino cuidar juntos.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas10-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-toro-de-oro-que-no-pod-a-ser-pose-do">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-toro-de-oro-que-no-pod-a-ser-pose-do-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El toro de oro que no podía ser poseído</h3>
+<p>En las profundidades de la laguna de Tiquipaya...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas10" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas10" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El toro de oro que no podía ser poseído</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las profundidades de la laguna de Tiquipaya, algunos ancianos han visto un toro de oro que emerge al atardecer en días especiales. Muchos han intentado atraparlo, pero cuando se acercan, se desvanece como la niebla matutina. Un hombre rico llegó con redes de plata y cadenas de hierro para capturarlo. Cuando el toro apareció, no huyó; lo miró a los ojos y dijo: "Soy el brillo de esta tierra, no un trozo de metal. Quien intenta poseerme, pierde lo que ya tiene". El hombre rico regresó a su casa y encontró que su fortuna se había quemado en un incendio. Desde entonces, nadie más ha intentado capturarlo, pues saben que la belleza de la tierra se destruye cuando se intenta encerrar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-abuela-que-teji-las-nubes">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-abuela-que-teji-las-nubes-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La abuela que tejió las nubes</h3>
+<p>Cuentan que en una comunidad del valle de Cochabamba...</p>
+<button class="btn boton-leer" data-bs-target="#mito4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La abuela que tejió las nubes</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan que en una comunidad del valle de Cochabamba vivía una anciana que pasaba sus días mirando el cielo. La gente decía que estaba perdiendo la razón, pero lo que nadie sabía es que ella hablaba con las nubes. Cuando llegaban tiempos de sequía, ella les pedía con suavidad que se quedaran un poco más, y las nubes, obedientes, soltaban su lluvia sobre los sembradíos. Un año, unos forasteros le dijeron que debía trabajar como los demás y dejar de mirar al cielo. La anciana bajó la cabeza y dejó de hablar con las nubes. Ese año no llovió. Cuando comprendieron su error, fueron a pedirle perdón, pero ella ya había partido. Dicen que ahora vive entre las nubes, y que cada vez que llueve suavemente, es ella recordando cómo cuidar a su gente.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

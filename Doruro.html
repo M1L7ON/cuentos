@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1oruro.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Misterios que nacen en el corazón del altiplano</p>
+<h1><span>ORURO</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Oruro.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Misterios que nacen en el corazón del altiplano</p>
+<h2>Tradiciones y leyendas de Oruro</h2>
+<p>Adéntrate en historias de cerros, minas, seres misteriosos y costumbres del pueblo orureño.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--cuwnto2-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="Oruro" data-tipo="Leyenda">
+<article class="tarjeta" id="el-zorro-que-enamor-a-la-pastora">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-zorro-que-enamor-a-la-pastora-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El zorro que enamoró a la pastora</h3>
+<p>Entre las comunidades de los Urus, cerca del lago Poopó...</p>
+<button class="btn boton-leer" data-bs-target="#cuento2" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento2" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El zorro que enamoró a la pastora</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Entre las comunidades de los Urus, cerca del lago Poopó, cuentan que una joven pastora vivía sola con sus ovejas. No hablaba con nadie, pero cada noche un joven de blanco vestido llegaba a su puerta con un charango y le cantaba canciones tan hermosas que la luna misma parecía detenerse a escucharlo. Siempre se iba antes del amanecer. Una noche, la muchacha decidió retenerlo y cerró la puerta antes de que él partiera. Al salir el sol, el joven desapareció y en su lugar quedó un zorro con una quijada de burro en el hocico. Comprendió entonces que él era un espíritu de la naturaleza que solo podía visitar la oscuridad. Desde ese día, ella no intentó retenerlo más; simplemente esperaba cada noche, sabiendo que algunas presencias son más bellas cuando se las deja ser libres.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-piedra-que-cantaba-en-la-oscuridad">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-piedra-que-cantaba-en-la-oscuridad-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La piedra que cantaba en la oscuridad</h3>
+<p>Cerca de las salinas de Coipasa, existía...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La piedra que cantaba en la oscuridad</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cerca de las salinas de Coipasa, existía una piedra redonda y lisa que emitía un sonido suave y profundo durante las noches sin luna. Los antiguos decían que era la voz de la tierra contando historias que solo el silencio podía entender. Un comerciante que pasaba por ahí pensó que era una joya valiosa y decidió llevársela. Pero al intentar moverla, la piedra se volvió tan pesada que ni diez hombres pudieron moverla. Entonces comprendió que no era suya para llevarla. Dicen que aún hoy, en las noches sin luna, si uno se acerca con el corazón tranquilo y sin deseos de poseerla, aún se escucha su canto suave como el viento entre la sal.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-de-las-estrellas-ca-das">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-de-las-estrellas-ca-das-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna de las estrellas caídas</h3>
+<p>Cuentan que una noche clara, varias estrellas bajaron...</p>
+<button class="btn boton-leer" data-bs-target="#mito3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna de las estrellas caídas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan que una noche clara, varias estrellas bajaron del cielo para bañarse en una laguna escondida entre los cerros. Se sintieron tan a gusto que decidieron quedarse allí. Cuando el sol salió, ya no pudieron regresar y se convirtieron en peces de colores brillantes que solo salen a la superficie cuando la luna llena se refleja en el agua. Quienes las han visto dicen que no hay que intentar atraparlas, pues son estrellas que eligieron vivir en la tierra, y su libertad es sagrada.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-guardaba-los-nombres-olvidados">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-guardaba-los-nombres-olvidados-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que guardaba los nombres olvidados</h3>
+<p>En un valle escondido de los Andes orureños...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que guardaba los nombres olvidados</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En un valle escondido de los Andes orureños crecía un árbol antiguo de ramas retorcidas y hojas plateadas. Se decía que cada hoja contenía el nombre de alguien que había sido olvidado por su familia. Quien necesitaba recordar a un ser querido que ya no estaba, se sentaba en silencio bajo el árbol y, al caer una hoja, leía el nombre y su corazón encontraba paz. Un día, alguien quiso cortarlo para vender su madera preciosa. Pero al primer hachazo, el árbol soltó tantas hojas que cubrieron el suelo como una manta de plata, y de cada una salió un susurro que decía: "No cortes lo que sostiene la memoria del pueblo". El leñador huyó asustado y nadie ha vuelto a intentar dañarlo.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito2-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-ni-o-que-se-convirti-en-volc-n">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-nino-que-se-convirti-en-volc-n-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El niño que se convirtió en volcán</h3>
+<p>Hace muchísimo tiempo, en las tierras altas de Oruro...</p>
+<button class="btn boton-leer" data-bs-target="#mito2" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito2" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El niño que se convirtió en volcán</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Hace muchísimo tiempo, en las tierras altas de Oruro, un niño muy bondadoso compartía todo lo que tenía con los animales y las personas necesitadas. Una gran sequía azotó la región y el niño, viendo sufrir a su gente, subió a la montaña más alta y pidió al cielo que tomara su vida a cambio de agua para su pueblo. El cielo aceptó: el niño se durmió y su cuerpo se convirtió en una montaña que, desde entonces, lanza humo y calor como su último suspiro, recordando que el amor más grande es el que se entrega por los demás.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

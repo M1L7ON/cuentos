@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="2leyendas.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<center>
+<p class="bienvenida">Secretos y misterios transmitidos por generaciones</p>
+<h1><span>Leyendas</span></h1>
+<p class="texto-portada">Conoce historias de lugares misteriosos y sucesos extraordinarios transmitidos de generación en generación.</p>
+</center>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Descubre las</p>
+<h2>Leyendas Bolivianas</h2>
+<p>Explora historias de lugares encantados, personajes misteriosos y sucesos extraordinarios que forman parte de la memoria de nuestros pueblos.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--leyenda1-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-de-la-vertiente-sagrada">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-de-la-vertiente-sagrada-la-paz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · La Paz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella de la vertiente sagrada</h3>
+<p>Cuentan los abuelos de la zona del Collao que...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda1" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda1" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella de la vertiente sagrada</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan los abuelos de la zona del Collao que, en tiempos antiguos, una joven llamada Qora vivía cerca de una vertiente cristalina. Era tan pura que nadie la había visto enojarse. Un día, un grupo de viajeros extranjeros intentó llevarse el agua en vasijas de barro para venderla. La joven se interpuso, pero en lugar de pelear, se arrodilló y pidió respeto a la tierra. Al amanecer, los viajeros despertaron y la joven ya no estaba; en su lugar, una pequeña flor de color azul claro crecía justo donde ella se había arrodillado. Desde entonces, nadie se atreve a llevarse el agua de esa vertiente en recipientes, pues se dice que el agua se evapora si no se bebe en el mismo lugar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda2-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-que-no-quer-a-ser-encontrada">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-que-no-quer-a-ser-encontrada-la-paz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · La Paz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna que no quería ser encontrada</h3>
+<p>En las montañas de los Yungas paceños existe...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda2" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda2" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna que no quería ser encontrada</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las montañas de los Yungas paceños existe una laguna que solo se deja ver a quienes tienen el corazón limpio. Muchos han intentado buscarla guiados por mapas antiguos, pero siempre terminan perdiéndose entre la neblina espesa y los árboles gigantes. Cuentan que un hombre codicioso llegó con una pala y una bolsa vacía, esperando encontrar oro en sus orillas. Cuando por fin la halló, el agua se agitó furiosa y una niebla tan densa lo envolvió que, al despejarse, él ya no estaba. Solo quedaron su pala y su bolsa, convertidas en piedra. Los que conocen el secreto dicen que la laguna no se esconde, sino que nosotros somos quienes no sabemos mirar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-piedra-que-cantaba-en-la-oscuridad">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-piedra-que-cantaba-en-la-oscuridad-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La piedra que cantaba en la oscuridad</h3>
+<p>Cerca de las salinas de Coipasa, existía...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La piedra que cantaba en la oscuridad</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cerca de las salinas de Coipasa, existía una piedra redonda y lisa que emitía un sonido suave y profundo durante las noches sin luna. Los antiguos decían que era la voz de la tierra contando historias que solo el silencio podía entender. Un comerciante que pasaba por ahí pensó que era una joya valiosa y decidió llevársela. Pero al intentar moverla, la piedra se volvió tan pesada que ni diez hombres pudieron moverla. Entonces comprendió que no era suya para llevarla. Dicen que aún hoy, en las noches sin luna, si uno se acerca con el corazón tranquilo y sin deseos de poseerla, aún se escucha su canto suave como el viento entre la sal.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-guardaba-los-nombres-olvidados">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-guardaba-los-nombres-olvidados-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que guardaba los nombres olvidados</h3>
+<p>En un valle escondido de los Andes orureños...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que guardaba los nombres olvidados</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En un valle escondido de los Andes orureños crecía un árbol antiguo de ramas retorcidas y hojas plateadas. Se decía que cada hoja contenía el nombre de alguien que había sido olvidado por su familia. Quien necesitaba recordar a un ser querido que ya no estaba, se sentaba en silencio bajo el árbol y, al caer una hoja, leía el nombre y su corazón encontraba paz. Un día, alguien quiso cortarlo para vender su madera preciosa. Pero al primer hachazo, el árbol soltó tantas hojas que cubrieron el suelo como una manta de plata, y de cada una salió un susurro que decía: "No cortes lo que sostiene la memoria del pueblo". El leñador huyó asustado y nadie ha vuelto a intentar dañarlo.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda5-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-monta-a-que-habl-con-el-minero-honestos">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-montana-que-habl-con-el-minero-honestos-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La montaña que habló con el minero honestos</h3>
+<p>En las profundidades del Cerro Rico, un minero llamado Domingo...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La montaña que habló con el minero honesto</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las profundidades del Cerro Rico, un minero llamado Domingo trabajaba con respeto, sin tomar más de lo que necesitaba para su familia. Una tarde, mientras descansaba, la montaña misma le habló con voz grave y cálida: "Tú me tratas como a un hermano, no como a un objeto. Por eso, te mostraré lo que no muere". Entonces, la pared de roca se abrió suavemente y vio una veta de plata pura que brillaba con luz propia. Pero la montaña le advirtió: "Toma solo lo necesario. Si llevas más, este camino se cerrará para siempre". Domingo cumplió. Cuando otros mineros quisieron seguirlo, el pasadizo ya no existía. La riqueza, comprendió, solo se revela a quienes saben ser suficientes.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-de-las-nieves-eternas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-de-las-nieves-eternas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella de las nieves eternas</h3>
+<p>En los picos más altos de los Andes potosinos...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella de las nieves eternas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los picos más altos de los Andes potosinos, donde la nieve nunca se derrite, vivía una joven de cabellos blancos y ojos celestes. Era la guardiana del agua que nacía de los glaciares. Un día, unos hombres llegaron con herramientas para abrir canales y desviar el agua hacia las minas. La joven les dijo: "Si tomáis el agua de donde nace, la fuente se secará y nadie beberá jamás". No la escucharon. Al primer golpe de pico, una avalancha bajó suavemente, sin hacer daño a nadie, pero cubrió completamente el lugar donde habían empezado a trabajar. Cuando la nieve se derritió meses después, el agua fluía por su cauce original, y de la joven nunca más se supo, salvo que su voz aún se escucha en el viento que recorre las cumbres.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda7-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-lago-que-no-quer-a-riquezas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('/el-lago-que-no-quer-a-riquezas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El lago que no quería riquezas</h3>
+<p>En la altiplanicie de los límites con Sud Lípez...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda7" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda7" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El lago que no quería riquezas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En la altiplanicie de los límites con Sud Lípez, existía una laguna cuyas orillas brillaban como si estuvieran hechas de plata. Un grupo de buscadores de tesoros llegó con grandes bolsas para llevarse lo que creían era mineral precioso. Al acercarse a la orilla, el agua se oscureció y olas tranquilas pero firmes los empujaron hacia atrás. "Yo no soy un depósito", decía una voz suave desde el centro del agua. "Soy la vida que sostiene a vuestros rebaños y a vuestros campos. Si me tomáis, os tomáis a vosotros mismos". Los hombres, avergonzados, se fueron vacíos pero con el corazón lleno de una lección que nunca olvidaron: la verdadera riqueza no se lleva en la bolsa, sino en la tierra que nos alimenta.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda8-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-silencio-del-mineral">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-silencio-del-mineral-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El silencio del mineral</h3>
+<p>Cuentan los mineros más ancianos de Potosí que hay ciertos días...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda8" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda8" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El silencio del mineral</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan los mineros más ancianos de Potosí que hay ciertos días del año en que la montaña guarda silencio absoluto. Ningún pico golpea la roca, ningún martillo suena. Quienes no saben dicen que es mala suerte trabajar esos días, pero los que conocen saben la verdad: la montaña está escuchando. Esos días, la tierra repone lo que se ha tomado y recupera su aliento. El minero sabio descansa esos días, no por miedo, sino por respeto a que incluso la tierra necesita tiempo para sanar. Quien ignora esto y trabaja, se dice que la veta se pierde y no vuelve a aparecer en toda su vida.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda9-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-que-se-neg-a-secarse">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-que-se-neg-a-secarse-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna que se negó a secarse</h3>
+<p>En los cerros de Tiquipaya existe una pequeña laguna...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda9" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda9" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna que se negó a secarse</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los cerros de Tiquipaya existe una pequeña laguna que, a pesar de los años de sequía, nunca ha desaparecido. Cuentan que hace mucho tiempo, una comunidad decidió desviar sus aguas para ampliar los sembradíos. Cuando empezaron a cavar el canal, el agua de la laguna se elevó suavemente como una pared transparente y una voz clara dijo: "Si me repartís para tener más, todo se secará y no tendréis nada". Los campesinos se detuvieron. Comprendieron que la laguna no era suya para repartir, sino un regalo compartido. Desde entonces, solo toman lo que el agua les permite devolver, y la laguna sigue ahí, enseñando que compartir no es dividir, sino cuidar juntos.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas10-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-toro-de-oro-que-no-pod-a-ser-pose-do">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-toro-de-oro-que-no-pod-a-ser-pose-do-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El toro de oro que no podía ser poseído</h3>
+<p>En las profundidades de la laguna de Tiquipaya...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas10" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas10" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El toro de oro que no podía ser poseído</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las profundidades de la laguna de Tiquipaya, algunos ancianos han visto un toro de oro que emerge al atardecer en días especiales. Muchos han intentado atraparlo, pero cuando se acercan, se desvanece como la niebla matutina. Un hombre rico llegó con redes de plata y cadenas de hierro para capturarlo. Cuando el toro apareció, no huyó; lo miró a los ojos y dijo: "Soy el brillo de esta tierra, no un trozo de metal. Quien intenta poseerme, pierde lo que ya tiene". El hombre rico regresó a su casa y encontró que su fortuna se había quemado en un incendio. Desde entonces, nadie más ha intentado capturarlo, pues saben que la belleza de la tierra se destruye cuando se intenta encerrar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas11-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-mina-que-se-cerr-por-respeto">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-mina-que-se-cerr-por-respeto-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La mina que se cerró por respeto</h3>
+<p>En las montañas de los alrededores de Sucre...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas11" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas11" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La mina que se cerró por respeto</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las montañas de los alrededores de Sucre, existía una mina que producía plata abundante. Un día, los trabajadores encontraron en su interior una cámara donde se veían dibujos de estrellas y ríos, hechos por quienes habitaron esas tierras mucho antes. El dueño ordenó seguir excavando para extraer más mineral. Pero cada vez que comenzaban a cavar, la tierra se desmoronaba suavemente sin lastimar a nadie. Un anciano del pueblo dijo: "Ella no se defiende con violencia; simplemente no quiere que la lastimen. Dejadla en paz". Así lo hicieron. La mina se cerró para siempre, pero dicen que quienes se acercan en silencio y con respeto, aún pueden escuchar el eco de las voces antiguas que cuidaban ese lugar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas12-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-guardaba-el-tiempo">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-guardaba-el-tiempo-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que guardaba el tiempo</h3>
+<p>En un valle de Chuquisaca crecía un árbol tan antiguo...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas12" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas12" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que guardaba el tiempo</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En un valle de Chuquisaca crecía un árbol tan antiguo que nadie recordaba haberlo visto joven. Se decía que cada anillo de su tronco contenía un año de la historia del pueblo. Cuando alguien tenía una duda sobre algo que había ocurrido hace mucho tiempo, se sentaba bajo su sombra y esperaba con calma. Al poco tiempo, una hoja caía al suelo y, al leer las venas de esa hoja, la respuesta se hacía clara en el corazón de quien preguntaba. Un hombre que quería construir un palacio pensó en cortarlo para usar su madera. Pero al acercarse con su hacha, el árbol se volvió tan duro como la piedra y su sombra se alargó cubriéndolo todo, como diciendo: "El tiempo no se corta, se respeta". El hombre se marchó y nadie ha vuelto a amenazarlo desde entonces.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas13-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-piedra-que-hablaba-al-amanecer">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-piedra-que-hablaba-al-amanecer-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La piedra que hablaba al amanecer</h3>
+<p>En una quebrada cercana a Tarabuco...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas13" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas13" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La piedra que hablaba al amanecer</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En una quebrada cercana a Tarabuco, hay una piedra plana y lisa que solo habla cuando el sol sale por primera vez en el año nuevo. Dicen que su voz no se escucha con los oídos, sino que se siente en el pecho, como una certeza que ya se sabía pero se había olvidado. Solo le han escuchado quienes llegan sin prisa, sin cargas y sin deseos de pedir nada. Les dice simplemente: "Todo lo que necesitáis ya está dentro de vosotros". Muchos han llegado con listas de peticiones, pero la piedra ha permanecido en silencio para ellos. No porque sea egoísta, sino porque la verdad no se pide, se reconoce.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda14-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-viento-que-devolv-a-las-palabras-olvidadas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-viento-que-devolv-a-las-palabras-olvidadas-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El viento que devolvía las palabras olvidadas</h3>
+<p>Los abuelos de Chuquisaca decían que cuando uno olvida una palabra importante...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda14" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda14" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El viento que devolvía las palabras olvidadas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los abuelos de Chuquisaca decían que cuando uno olvida una palabra importante, o algo que necesitaba recordar, no se ha perdido para siempre: simplemente, el viento se la ha llevado para cuidarla. Si uno se queda quieto, respira hondo y no tiene prisa, el mismo viento regresa suavemente y susurra la palabra al oído. Un joven que no creía en esto gritó al viento pidiendo que le devolviera el nombre de su abuela, que había olvidado. Gritó tan fuerte que se quedó sin voz. Entonces, en el silencio, el viento rozó su mejilla con cariño y el nombre surgió en su corazón sin necesidad de sonido, como si siempre hubiera estado ahí esperando ser recordado con amor.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda15-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-princesa-que-se-convirti-en-cerro">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-princesa-que-se-convirti-en-cerro-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La princesa que se convirtió en cerro</h3>
+<p>En las sierras de Tarija vivía una princesa de ojos oscuros y...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda15" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda15" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La princesa que se convirtió en cerro</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las sierras de Tarija vivía una princesa de ojos oscuros y cabellos largos que amaba caminar por las cumbres. Su pueblo estaba en guerra y los enemigos se acercaban para capturarla. Al llegar a la cima de la montaña más alta, miró su valle por última vez y pidió a la tierra que la protegiera sin hacer daño a nadie. La tierra la abrazó suavemente y su cuerpo se transformó en una colina redonda y cubierta de hierba verde. Dicen que aún hoy, si se mira con ojos atentos, se puede distinguir su forma acostada mirando hacia el valle que tanto amó. No murió, dicen los ancianos, simplemente decidió quedarse vigilando para siempre.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda16-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-flor-que-solo-florece-al-amanecer">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-flor-que-solo-florece-al-amanecer-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La flor que solo florece al amanecer</h3>
+<p>En los valles cálidos de Tarija crece una flor pequeña...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda16" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda16" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La flor que solo florece al amanecer</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los valles cálidos de Tarija crece una flor pequeña y blanca que abre sus pétalos justo cuando el sol asoma por el horizonte y se cierra antes de que el día caliente demasiado. Se dice que si la recoges para ti solo, se marchita en tus manos al instante. Pero si la miras, la admiras y la dejas ahí, su fragancia te acompaña durante todo el día como un regalo que no necesita ser poseído para ser disfrutado. La belleza más pura no se lleva, se visita.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda17-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-r-o-que-se-llev-las-palabras-de-mentira">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-r-o-que-se-llev-las-palabras-de-mentira-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El río que se llevó las palabras de mentira</h3>
+<p>Los ancianos chiquitanos cuentan que en tiempos antiguos...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda17" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda17" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El río que se llevó las palabras de mentira</h5>
+&gt;
+                                <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los ancianos chiquitanos cuentan que en tiempos antiguos, el río Grande era tan claro que podía escuchar lo que decían las personas a sus orillas. Si alguien decía la verdad, el agua fluía tranquila y cristalina. Pero si alguien mentía, el río se agitaba y se enturbiaba, llevándose consigo las palabras falsas para que no contaminaran la tierra. Un día, un hombre mintió sobre algo muy importante y el río se oscureció durante años. Cuando por fin el hombre confesó su falta y pidió perdón sinceramente, el agua recuperó su claridad. Desde entonces, se dice que el río no juzga, simplemente limpia lo que ensucia la convivencia entre personas.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda18-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-de-las-frutas-silvestres">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-de-las-frutas-silvestres-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella de las frutas silvestres</h3>
+<p>En las orillas del río Guapay vivía una joven que conocía el secreto de cada planta del bosque...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda18" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda18" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella de las frutas silvestres</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las orillas del río Guapay vivía una joven que conocía el secreto de cada planta del bosque. Sabía cuáles alimentaban, cuáles curaban y cuáles debían evitarse. Nunca cobró por su conocimiento, solo pedía que antes de recoger algo, se dieran las gracias a la tierra que lo había hecho crecer. Unos forasteros quisieron obligarla a revelar dónde estaban los árboles más valiosos para cortarlos. Ella se negó con calma y caminó hacia el río diciendo: “Lo que la tierra nos presta, no nos pertenece para venderlo”. Al llegar a la orilla, desapareció en el agua sin dejar rastro, pero cada vez que alguien da gracias antes de recoger del monte, se dice que ella sonríe desde el bosque.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda19-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-que-cantaba-de-noche">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-que-cantaba-de-noche-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna que cantaba de noche</h3>
+<p>En las llanuras inundables del Beni existe una laguna escondida...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda19" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda19" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna que cantaba de noche</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las llanuras inundables del Beni existe una laguna escondida entre palmerales que emite un sonido suave y melodioso durante las noches de luna llena. Los ancianos trinitarios dicen que no es el agua lo que suena, sino las voces de los antepasados que aún cuidan esa tierra. Muchos han intentado grabar ese sonido, pero las grabaciones siempre salen en silencio. No puede ser capturado por máquinas, afirman, porque solo existe para quien lo escucha con el alma abierta.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda20-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-isla-que-aparec-a-y-desaparec-a">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-isla-que-aparec-a-y-desaparec-a-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La isla que aparecía y desaparecía</h3>
+<p>En medio de una gran laguna del Beni, los pescadores...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda20" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda20" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La isla que aparecía y desaparecía</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En medio de una gran laguna del Beni, los pescadores hablaban de una isla pequeña que solo se dejaba ver en momentos de gran necesidad. Cuando una comunidad pasaba hambre o enfermedad, la isla se hacía visible y en ella crecían frutos maduros y había agua fresca. Pero cuando la gente llegaba con barcas grandes para llevarse todo de una vez, la isla se desvanecía como una niebla matutina. No es un lugar para poseer, decían los ancianos, sino un momento de ayuda que la tierra nos presta cuando más lo necesitamos.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda21-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-ave-que-tra-a-el-recuerdo-de-los-que-se-fueron">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-ave-que-tra-a-el-recuerdo-de-los-que-se-fueron-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El ave que traía el recuerdo de los que se fueron</h3>
+<p>Los pueblos ribereños del Beni creen que un pájaro de plumaje...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda21" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda21" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El ave que traía el recuerdo de los que se fueron</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los pueblos ribereños del Beni creen que un pájaro de plumaje oscuro y canto suave visita las casas donde alguien ha partido recientemente. No es un mensajero de muerte, sino un portador de recuerdos bonitos. Cuando se le escucha cantar cerca de casa, significa que los que partieron siguen presentes en el amor que dejaron atrás. Por eso, nunca se le ahuyenta, sino que se le ofrece un poco de comida y se le escucha en silencio, como quien recibe a un amigo que viene a decirnos que no estamos solos.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda22-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-canoa-que-se-mov-a-sola">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-canoa-que-se-mov-a-sola-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La canoa que se movía sola</h3>
+<p>Un pescador tenía una canoa vieja que siempre le servía fielmente...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda22" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda22" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La canoa que se movía sola</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Un pescador tenía una canoa vieja que siempre le servía fielmente. Unos comerciantes le ofrecieron mucho dinero por ella, diciendo que la usarían para transportar mercancías pesadas. El pescador dudó, pero aceptó. Esa misma noche, la canoa se desató sola y volvió a su orilla original. Los comerciantes insistieron varias veces, pero siempre regresaba. Al final, el pescador comprendió que esa canoa no era simplemente madera y remos; era parte de su vida y de su relación con el río. Lo que nos acompaña con lealtad no es algo que se vende, decidió, y nunca más volvió a ofrecerla.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda23-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-niebla-que-hablaba-con-los-perdidos">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-niebla-que-hablaba-con-los-perdidos-pando.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Pando</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La niebla que hablaba con los perdidos</h3>
+<p>En las mañanas de la selva pandina, la niebla...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda23" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda23" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La niebla que hablaba con los perdidos</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las mañanas de la selva pandina, la niebla es tan espesa que no se ve a dónde ir. Los antiguos decían que la niebla no está ahí para confundir, sino para detenernos cuando vamos demasiado deprisa y sin prestar atención. Si uno se detiene, respira y espera con calma, la niebla se abre suavemente mostrando el camino correcto. Si uno intenta forzarla y camina a ciegas con prisa, se vuelve más densa y confusa. La naturaleza no nos bloquea el paso, enseñaban, sino que nos recuerda que no siempre hay que avanzar a toda costa.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda24-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-planta-que-hablaba-con-los-sue-os">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-planta-que-hablaba-con-los-suenos-la-paz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · La paz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La planta que hablaba con los sueños</h3>
+<p>En las orillas del río Beni...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda24" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda24" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La planta que hablaba con los sueños</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las orillas del río Beni, antes de que llegaran los primeros caminos, crecía una planta de hojas redondas y brillantes que solo florecía de noche. Si alguien se dormía con una de sus hojas bajo la almohada, sus sueños le mostraban lo que su corazón ya sabía pero no se atrevía a decir. Un hombre que no creía en nada la arrancó de raíz para venderla en el mercado. Desde ese día, nadie ha vuelto a encontrarla. Sin embargo, los ancianos aseguran que no desapareció; simplemente, solo se deja hallar por quienes no quieren poseerla.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

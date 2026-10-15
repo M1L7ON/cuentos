@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1chuquisaca.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Ecos del pasado entre calles y valles históricos</p>
+<h1><span>CHUQUISACA</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Chuquisaca.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Ecos del pasado entre calles y valles históricos</p>
+<h2>Memorias tradicionales de Chuquisaca</h2>
+<p>Descubre relatos populares, leyendas locales y tradiciones que forman parte de la identidad chuquisaqueña.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--leyendas11-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-mina-que-se-cerr-por-respeto">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-mina-que-se-cerr-por-respeto-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La mina que se cerró por respeto</h3>
+<p>En las montañas de los alrededores de Sucre...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas11" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas11" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La mina que se cerró por respeto</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las montañas de los alrededores de Sucre, existía una mina que producía plata abundante. Un día, los trabajadores encontraron en su interior una cámara donde se veían dibujos de estrellas y ríos, hechos por quienes habitaron esas tierras mucho antes. El dueño ordenó seguir excavando para extraer más mineral. Pero cada vez que comenzaban a cavar, la tierra se desmoronaba suavemente sin lastimar a nadie. Un anciano del pueblo dijo: "Ella no se defiende con violencia; simplemente no quiere que la lastimen. Dejadla en paz". Así lo hicieron. La mina se cerró para siempre, pero dicen que quienes se acercan en silencio y con respeto, aún pueden escuchar el eco de las voces antiguas que cuidaban ese lugar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas13-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-piedra-que-hablaba-al-amanecer">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-piedra-que-hablaba-al-amanecer-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La piedra que hablaba al amanecer</h3>
+<p>En una quebrada cercana a Tarabuco...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas13" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas13" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La piedra que hablaba al amanecer</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En una quebrada cercana a Tarabuco, hay una piedra plana y lisa que solo habla cuando el sol sale por primera vez en el año nuevo. Dicen que su voz no se escucha con los oídos, sino que se siente en el pecho, como una certeza que ya se sabía pero se había olvidado. Solo le han escuchado quienes llegan sin prisa, sin cargas y sin deseos de pedir nada. Les dice simplemente: "Todo lo que necesitáis ya está dentro de vosotros". Muchos han llegado con listas de peticiones, pero la piedra ha permanecido en silencio para ellos. No porque sea egoísta, sino porque la verdad no se pide, se reconoce.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda14-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-viento-que-devolv-a-las-palabras-olvidadas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-viento-que-devolv-a-las-palabras-olvidadas-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El viento que devolvía las palabras olvidadas</h3>
+<p>Los abuelos de Chuquisaca decían que cuando uno olvida una palabra importante...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda14" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda14" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El viento que devolvía las palabras olvidadas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los abuelos de Chuquisaca decían que cuando uno olvida una palabra importante, o algo que necesitaba recordar, no se ha perdido para siempre: simplemente, el viento se la ha llevado para cuidarla. Si uno se queda quieto, respira hondo y no tiene prisa, el mismo viento regresa suavemente y susurra la palabra al oído. Un joven que no creía en esto gritó al viento pidiendo que le devolviera el nombre de su abuela, que había olvidado. Gritó tan fuerte que se quedó sin voz. Entonces, en el silencio, el viento rozó su mejilla con cariño y el nombre surgió en su corazón sin necesidad de sonido, como si siempre hubiera estado ahí esperando ser recordado con amor.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyendas12-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-guardaba-el-tiempo">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-guardaba-el-tiempo-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que guardaba el tiempo</h3>
+<p>En un valle de Chuquisaca crecía un árbol tan antiguo...</p>
+<button class="btn boton-leer" data-bs-target="#leyendas12" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyendas12" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que guardaba el tiempo</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En un valle de Chuquisaca crecía un árbol tan antiguo que nadie recordaba haberlo visto joven. Se decía que cada anillo de su tronco contenía un año de la historia del pueblo. Cuando alguien tenía una duda sobre algo que había ocurrido hace mucho tiempo, se sentaba bajo su sombra y esperaba con calma. Al poco tiempo, una hoja caía al suelo y, al leer las venas de esa hoja, la respuesta se hacía clara en el corazón de quien preguntaba. Un hombre que quería construir un palacio pensó en cortarlo para usar su madera. Pero al acercarse con su hacha, el árbol se volvió tan duro como la piedra y su sombra se alargó cubriéndolo todo, como diciendo: "El tiempo no se corta, se respeta". El hombre se marchó y nadie ha vuelto a amenazarlo desde entonces.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda100-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-que-convirti-su-dolor-en-agua">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-que-convirti-su-dolor-en-agua-chuquisaca.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Chuquisaca</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella que convirtió su dolor en agua</h3>
+<p>En las faldas del cerro Sica Sica, cerca de Sucre...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda100" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda100" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella que convirtió su dolor en agua</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las faldas del cerro Sica Sica, cerca de Sucre, vivía una joven que fue prometida en matrimonio a un hombre que ella no amaba. Antes de la boda, subió a la montaña más alta y lloró durante tres días y tres noches sin detenerse. Sus lágrimas formaron un arroyo que corre hasta hoy. Cuando la fueron a buscar, ya no estaba, pero en su lugar creció una flor blanca y delicada a la que nadie ha logrado trasplantar, pues donde se arranca, se marchita al instante. Se dice que el arroyo nunca se seca, porque es el llanto de quien prefirió ser libre antes que infeliz.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

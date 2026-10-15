@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1tarija.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Tradiciones que florecen entre valles y quebradas</p>
+<h1><span>Tarija</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Tarija.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Tradiciones que florecen entre valles y quebradas</p>
+<h2>Cuentos y leyendas de Tarija</h2>
+<p>Recorre relatos llenos de costumbres, personajes populares y el encanto de los valles tarijeños.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--cuwnto6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-semilla-del-algarrobo-que-no-quer-a-germinar">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-semilla-del-algarrobo-que-no-quer-a-germinar-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La semilla del algarrobo que no quería germinar</h3>
+<p>Un campesino guaraní plantó una semilla de algarrobo...</p>
+<button class="btn boton-leer" data-bs-target="#cuento6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La semilla del algarrobo que no quería germinar</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Un campesino guaraní plantó una semilla de algarrobo, pero pasaron los meses y no brotaba. Impaciente, cavó para ver qué ocurría y encontró que la semilla había echado raíces profundas y fuertes hacia abajo, aunque nada se veía arriba. Su abuelo, que lo observaba, le dijo: “No te apresures a juzgar lo que no ves. Lo que sostiene lo que crece nunca se muestra primero”. El joven volvió a cubrirla con tierra y esperó con paciencia. Poco después, un brote pequeño pero firme apareció. Con los años, se convirtió en el árbol más grande y resistente de toda la región, porque lo que crece despacio, arraiga con fuerza.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda15-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-princesa-que-se-convirti-en-cerro">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-princesa-que-se-convirti-en-cerro-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La princesa que se convirtió en cerro</h3>
+<p>En las sierras de Tarija vivía una princesa de ojos oscuros y...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda15" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda15" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La princesa que se convirtió en cerro</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las sierras de Tarija vivía una princesa de ojos oscuros y cabellos largos que amaba caminar por las cumbres. Su pueblo estaba en guerra y los enemigos se acercaban para capturarla. Al llegar a la cima de la montaña más alta, miró su valle por última vez y pidió a la tierra que la protegiera sin hacer daño a nadie. La tierra la abrazó suavemente y su cuerpo se transformó en una colina redonda y cubierta de hierba verde. Dicen que aún hoy, si se mira con ojos atentos, se puede distinguir su forma acostada mirando hacia el valle que tanto amó. No murió, dicen los ancianos, simplemente decidió quedarse vigilando para siempre.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda16-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-flor-que-solo-florece-al-amanecer">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-flor-que-solo-florece-al-amanecer-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La flor que solo florece al amanecer</h3>
+<p>En los valles cálidos de Tarija crece una flor pequeña...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda16" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda16" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La flor que solo florece al amanecer</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los valles cálidos de Tarija crece una flor pequeña y blanca que abre sus pétalos justo cuando el sol asoma por el horizonte y se cierra antes de que el día caliente demasiado. Se dice que si la recoges para ti solo, se marchita en tus manos al instante. Pero si la miras, la admiras y la dejas ahí, su fragancia te acompaña durante todo el día como un regalo que no necesita ser poseído para ser disfrutado. La belleza más pura no se lleva, se visita.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-r-o-que-cantaba-antes-de-llover">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-r-o-que-cantaba-antes-de-llover-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El río que cantaba antes de llover</h3>
+<p>Los guaraníes del Gran Chaco cuentan que antiguamente...</p>
+<button class="btn boton-leer" data-bs-target="#mito5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El río que cantaba antes de llover</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los guaraníes del Gran Chaco cuentan que antiguamente, los ríos sabían cuándo iba a llover y cantaban para avisar a la gente. Un día, un hombre se burló de estas canciones y dijo que eran simples ruidos de agua. Desde ese momento, los ríos dejaron de cantar. Sin embargo, los ancianos aseguran que si uno se acerca a la orilla en completo silencio y sin pensar en nada más, aún se escucha un murmullo suave, como si el río estuviera recordando cómo cantar antes de que la humanidad olvidara escuchar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-guardi-n-de-los-cerros-del-chaco">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-guardi-n-de-los-cerros-del-chaco-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El guardián de los cerros del Chaco</h3>
+<p>En las sierras del Chaco tarijeño existe una figura que los ancianos...</p>
+<button class="btn boton-leer" data-bs-target="#mito6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El guardián de los cerros del Chaco</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las sierras del Chaco tarijeño existe una figura que los ancianos llaman “El Señor de los Montes”. No es un dios, sino un espíritu que cuida que nadie tome más leña, caza o frutos de los que necesita para vivir. Quienes abusan, cuentan que el camino de regreso se les hace largo y confuso, como si la tierra misma les pidiera que reflexionen. Quienes toman solo lo necesario, encuentran siempre el camino claro y los recursos suficientes. No castiga, solo enseña a medir nuestras necesidades.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

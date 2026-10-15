@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1potosi.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Relatos nacidos bajo la sombra del Cerro Rico</p>
+<h1><span>POTOSÍ</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Potosí.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Relatos nacidos bajo la sombra del Cerro Rico</p>
+<h2>Memorias y leyendas de Potosí</h2>
+<p>Conoce historias mineras, tradiciones antiguas y relatos que guardan la memoria potosina.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--cuwnto3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-semilla-que-viaj-hasta-las-estrellas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-semilla-que-viaj-hasta-las-estrellas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La semilla que viajó hasta las estrellas</h3>
+<p>Hace mucho tiempo, cuando las semillas aún hablaban con las personas...</p>
+<button class="btn boton-leer" data-bs-target="#cuento3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La semilla que viajó hasta las estrellas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Hace mucho tiempo, cuando las semillas aún hablaban con las personas, una pequeña semilla de quinua le preguntó a una anciana: "¿Puedo crecer más alto que los cerros?". La anciana sonrió y dijo: "No necesitas ser alta para llegar lejos. Mira cómo caes en la tierra, te haces pequeña y luego das vida a muchos". La semilla no entendió del todo, pero confió. Se dejó caer, se cubrió de tierra y, con el sol y la lluvia, brotó. No creció más alta que los cerros, pero sus granos alimentaron a generaciones enteras. Y cada grano que caía, viajaba en manos de alguien más, hasta que la semilla que quiso llegar a las estrellas, llegó a cada rincón de los Andes sin haber dejado nunca la tierra.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda5-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-monta-a-que-habl-con-el-minero-honestos">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-montana-que-habl-con-el-minero-honestos-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La montaña que habló con el minero honestos</h3>
+<p>En las profundidades del Cerro Rico, un minero llamado Domingo...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La montaña que habló con el minero honesto</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las profundidades del Cerro Rico, un minero llamado Domingo trabajaba con respeto, sin tomar más de lo que necesitaba para su familia. Una tarde, mientras descansaba, la montaña misma le habló con voz grave y cálida: "Tú me tratas como a un hermano, no como a un objeto. Por eso, te mostraré lo que no muere". Entonces, la pared de roca se abrió suavemente y vio una veta de plata pura que brillaba con luz propia. Pero la montaña le advirtió: "Toma solo lo necesario. Si llevas más, este camino se cerrará para siempre". Domingo cumplió. Cuando otros mineros quisieron seguirlo, el pasadizo ya no existía. La riqueza, comprendió, solo se revela a quienes saben ser suficientes.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-de-las-nieves-eternas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-de-las-nieves-eternas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella de las nieves eternas</h3>
+<p>En los picos más altos de los Andes potosinos...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella de las nieves eternas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En los picos más altos de los Andes potosinos, donde la nieve nunca se derrite, vivía una joven de cabellos blancos y ojos celestes. Era la guardiana del agua que nacía de los glaciares. Un día, unos hombres llegaron con herramientas para abrir canales y desviar el agua hacia las minas. La joven les dijo: "Si tomáis el agua de donde nace, la fuente se secará y nadie beberá jamás". No la escucharon. Al primer golpe de pico, una avalancha bajó suavemente, sin hacer daño a nadie, pero cubrió completamente el lugar donde habían empezado a trabajar. Cuando la nieve se derritió meses después, el agua fluía por su cauce original, y de la joven nunca más se supo, salvo que su voz aún se escucha en el viento que recorre las cumbres.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda7-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-lago-que-no-quer-a-riquezas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-lago-que-no-quer-a-riquezas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El lago que no quería riquezas</h3>
+<p>En la altiplanicie de los límites con Sud Lípez...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda7" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda7" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El lago que no quería riquezas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En la altiplanicie de los límites con Sud Lípez, existía una laguna cuyas orillas brillaban como si estuvieran hechas de plata. Un grupo de buscadores de tesoros llegó con grandes bolsas para llevarse lo que creían era mineral precioso. Al acercarse a la orilla, el agua se oscureció y olas tranquilas pero firmes los empujaron hacia atrás. "Yo no soy un depósito", decía una voz suave desde el centro del agua. "Soy la vida que sostiene a vuestros rebaños y a vuestros campos. Si me tomáis, os tomáis a vosotros mismos". Los hombres, avergonzados, se fueron vacíos pero con el corazón lleno de una lección que nunca olvidaron: la verdadera riqueza no se lleva en la bolsa, sino en la tierra que nos alimenta.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda8-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-silencio-del-mineral">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-silencio-del-mineral-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El silencio del mineral</h3>
+<p>Cuentan los mineros más ancianos de Potosí que hay ciertos días...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda8" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda8" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El silencio del mineral</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan los mineros más ancianos de Potosí que hay ciertos días del año en que la montaña guarda silencio absoluto. Ningún pico golpea la roca, ningún martillo suena. Quienes no saben dicen que es mala suerte trabajar esos días, pero los que conocen saben la verdad: la montaña está escuchando. Esos días, la tierra repone lo que se ha tomado y recupera su aliento. El minero sabio descansa esos días, no por miedo, sino por respeto a que incluso la tierra necesita tiempo para sanar. Quien ignora esto y trabaja, se dice que la veta se pierde y no vuelve a aparecer en toda su vida.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

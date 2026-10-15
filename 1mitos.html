@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="2mitos.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<center>
+<p class="bienvenida">Entre dioses, misterios y creencias ancestrales</p>
+<h1><span>Mitos</span></h1>
+<p class="texto-portada">Explora las creencias ancestrales y los relatos sobre seres extraordinarios y el origen del mundo.</p>
+</center>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Descubre los</p>
+<h2>Mitos Bolivianos</h2>
+<p>Descubre las creencias de nuestros antepasados, los seres sobrenaturales y los relatos que explican el origen del mundo y de la vida.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--mito1-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-planta-que-hablaba-con-los-sue-os">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-planta-que-hablaba-con-los-suenos-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La planta que hablaba con los sueños</h3>
+<p>En las orillas del río Beni...</p>
+<button class="btn boton-leer" data-bs-target="#mito1" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito1" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La planta que hablaba con los sueños</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las orillas del río Beni, antes de que llegaran los primeros caminos, crecía una planta de hojas redondas y brillantes que solo florecía de noche. Si alguien se dormía con una de sus hojas bajo la almohada, sus sueños le mostraban lo que su corazón ya sabía pero no se atrevía a decir. Un hombre que no creía en nada la arrancó de raíz para venderla en el mercado. Desde ese día, nadie ha vuelto a encontrarla. Sin embargo, los ancianos aseguran que no desapareció; simplemente, solo se deja hallar por quienes no quieren poseerla.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito2-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-ni-o-que-se-convirti-en-volc-n">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-nino-que-se-convirti-en-volc-n-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El niño que se convirtió en volcán</h3>
+<p>Hace muchísimo tiempo, en las tierras altas de Oruro...</p>
+<button class="btn boton-leer" data-bs-target="#mito2" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito2" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El niño que se convirtió en volcán</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Hace muchísimo tiempo, en las tierras altas de Oruro, un niño muy bondadoso compartía todo lo que tenía con los animales y las personas necesitadas. Una gran sequía azotó la región y el niño, viendo sufrir a su gente, subió a la montaña más alta y pidió al cielo que tomara su vida a cambio de agua para su pueblo. El cielo aceptó: el niño se durmió y su cuerpo se convirtió en una montaña que, desde entonces, lanza humo y calor como su último suspiro, recordando que el amor más grande es el que se entrega por los demás.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-laguna-de-las-estrellas-ca-das">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-laguna-de-las-estrellas-ca-das-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La laguna de las estrellas caídas</h3>
+<p>Cuentan que una noche clara, varias estrellas bajaron...</p>
+<button class="btn boton-leer" data-bs-target="#mito3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La laguna de las estrellas caídas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan que una noche clara, varias estrellas bajaron del cielo para bañarse en una laguna escondida entre los cerros. Se sintieron tan a gusto que decidieron quedarse allí. Cuando el sol salió, ya no pudieron regresar y se convirtieron en peces de colores brillantes que solo salen a la superficie cuando la luna llena se refleja en el agua. Quienes las han visto dicen que no hay que intentar atraparlas, pues son estrellas que eligieron vivir en la tierra, y su libertad es sagrada.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-abuela-que-teji-las-nubes">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-abuela-que-teji-las-nubes-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La abuela que tejió las nubes</h3>
+<p>Cuentan que en una comunidad del valle de Cochabamba...</p>
+<button class="btn boton-leer" data-bs-target="#mito4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La abuela que tejió las nubes</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan que en una comunidad del valle de Cochabamba vivía una anciana que pasaba sus días mirando el cielo. La gente decía que estaba perdiendo la razón, pero lo que nadie sabía es que ella hablaba con las nubes. Cuando llegaban tiempos de sequía, ella les pedía con suavidad que se quedaran un poco más, y las nubes, obedientes, soltaban su lluvia sobre los sembradíos. Un año, unos forasteros le dijeron que debía trabajar como los demás y dejar de mirar al cielo. La anciana bajó la cabeza y dejó de hablar con las nubes. Ese año no llovió. Cuando comprendieron su error, fueron a pedirle perdón, pero ella ya había partido. Dicen que ahora vive entre las nubes, y que cada vez que llueve suavemente, es ella recordando cómo cuidar a su gente.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito5-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-r-o-que-cantaba-antes-de-llover">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-r-o-que-cantaba-antes-de-llover-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El río que cantaba antes de llover</h3>
+<p>Los guaraníes del Gran Chaco cuentan que antiguamente...</p>
+<button class="btn boton-leer" data-bs-target="#mito5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El río que cantaba antes de llover</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los guaraníes del Gran Chaco cuentan que antiguamente, los ríos sabían cuándo iba a llover y cantaban para avisar a la gente. Un día, un hombre se burló de estas canciones y dijo que eran simples ruidos de agua. Desde ese momento, los ríos dejaron de cantar. Sin embargo, los ancianos aseguran que si uno se acerca a la orilla en completo silencio y sin pensar en nada más, aún se escucha un murmullo suave, como si el río estuviera recordando cómo cantar antes de que la humanidad olvidara escuchar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-guardi-n-de-los-cerros-del-chaco">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-guardi-n-de-los-cerros-del-chaco-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El guardián de los cerros del Chaco</h3>
+<p>En las sierras del Chaco tarijeño existe una figura que los ancianos...</p>
+<button class="btn boton-leer" data-bs-target="#mito6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El guardián de los cerros del Chaco</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las sierras del Chaco tarijeño existe una figura que los ancianos llaman “El Señor de los Montes”. No es un dios, sino un espíritu que cuida que nadie tome más leña, caza o frutos de los que necesita para vivir. Quienes abusan, cuentan que el camino de regreso se les hace largo y confuso, como si la tierra misma les pidiera que reflexionen. Quienes toman solo lo necesario, encuentran siempre el camino claro y los recursos suficientes. No castiga, solo enseña a medir nuestras necesidades.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito7-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-camino-bajo-el-r-o">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-camino-bajo-el-r-o-pando.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Pando</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El camino bajo el río</h3>
+<p>Los pueblos de la selva de Pando cuentan...</p>
+<button class="btn boton-leer" data-bs-target="#mito7" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito7" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El camino bajo el río</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los pueblos de la selva de Pando cuentan que hay tiempos en que el río baja su nivel y se revelan piedras dispuestas como un sendero que cruza de orilla a orilla. No es un camino para personas comunes, dicen los ancianos, sino el paso que usaban los espíritus de la naturaleza para moverse entre las tierras sin mojarse. Si alguien lo transita con respeto y humildad, nada le ocurre. Pero si lo hace con burla o soberbia, el agua sube rápidamente y el camino desaparece hasta que pase otra generación. Algunos caminos no son para cruzar, sino para saber que existen.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito8-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-semilla-que-dorm-a-cien-a-os">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-semilla-que-dorm-a-cien-anos-pando.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Pando</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La semilla que dormía cien años</h3>
+<p>En la profundidad de la selva pandina...</p>
+<button class="btn boton-leer" data-bs-target="#mito8" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito8" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La semilla que dormía cien años</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En la profundidad de la selva pandina, un árbol gigante cayó y con él cayó una semilla que quedó enterrada bajo su tronco durante muchísimo tiempo. No murió, simplemente esperó. Cuando por fin el árbol viejo se convirtió en tierra fértil, la semilla brotó. No necesitó correr ni apresurarse; solo necesitó paciencia y confianza en que el momento justo llega para todos. Los que la encontraron dijeron que era imposible que hubiera sobrevivido tanto tiempo, pero la semilla ya sabía lo que muchos olvidan: vivir no es siempre crecer, a veces es esperar.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--mito9-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-anciano-que-teji-el-arco-ris">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-anciano-que-teji-el-arco-ris-la-paz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · La Paz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El anciano que tejió el arcoíris</h3>
+<p>Dice la leyenda que antes de que existieran los colores en el cielo...</p>
+<button class="btn boton-leer" data-bs-target="#mito9" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="mito9" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El anciano que tejió el arcoíris</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Dice la leyenda que antes de que existieran los colores en el cielo, un anciano sabio vivía en la cima de un cerro alto. Cada día observaba cómo el sol y la lluvia se abrazaban pero no podían quedarse juntos. Con hilos de lana teñidos con flores de la puna, con el brillo del sol al amanecer y con el azul profundo de las lagunas, el abuelo tejió un puente. No lo hizo para que los seres humanos cruzaran, sino para que el sol y la lluvia pudieran encontrarse sin perderse el uno al otro. Por eso, cuando ves el arcoíris, recuerda que es un puente tejido con paciencia y amor, no para caminar sobre él, sino para mirarlo con respeto.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

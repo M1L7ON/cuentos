@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="D1scz.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<p class="bienvenida">Relatos nacidos entre bosques y tierras cálidas</p>
+<h1><span>SANTA CRUZ DE LA SIERRA</span></h1>
+<p class="texto-portada">Explora los cuentos, mitos y leyendas de Historias del oriente boliviano.</p>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Relatos nacidos entre bosques y tierras cálidas</p>
+<h2>Historias del oriente boliviano</h2>
+<p>Descubre cuentos, mitos y leyendas inspirados en la naturaleza y las tradiciones cruceñas.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<!--cuwnto7-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-daba-sombra-solo-a-los-cansados">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-daba-sombra-solo-a-los-cansados-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que daba sombra solo a los cansados</h3>
+<p>En la inmensidad de los bosques de la Chiquitania...</p>
+<button class="btn boton-leer" data-bs-target="#cuento7" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento7" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que daba sombra solo a los cansados</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En la inmensidad de los bosques de la Chiquitania crecía un árbol enorme y antiguo. Los viajeros decían que si llegabas lleno de orgullo y prisa, su copa parecía alejarse y no daba sombra. Pero si llegabas cansado, humilde y con el corazón tranquilo, su sombra se ensanchaba como abrazándote, y debajo de él siempre había aire fresco y frutos maduros. Muchos buscaron el árbol para cortarlo y vender su madera, pero nunca lo encontraron. Se dice que solo se deja hallar por quienes necesitan descansar, no por quienes quieren aprovecharse de él.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto8-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-fuego-que-respet-el-nido">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-fuego-que-respet-el-nido-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El fuego que respetó el nido</h3>
+<p>Cuentan los pueblos de la Amazonía cruceña...</p>
+<button class="btn boton-leer" data-bs-target="#cuento8" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento8" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El fuego que respetó el nido</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan los pueblos de la Amazonía cruceña que hace mucho tiempo, un gran incendio recorría la selva impulsado por vientos fuertes. Todos los animales huían, pero un pajarillo pequeño se quedó volando de un lado a otro, llevando gotas de agua en su pico para apagar el fuego. Los animales más grandes le dijeron que era inútil, que no podía lograr nada. El pajarillo respondió: “Sé que no puedo apagarlo solo, pero hago mi parte porque este es mi hogar”. El fuego, al ver su valentía, se detuvo justo antes de llegar a su nido con los huevos recién puestos. Y alrededor de ese lugar, la vegetación se recuperó más rápido y más verde que en cualquier otro sitio.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto9-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-pez-que-devolv-a-los-objetos-perdidos">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-pez-que-devolv-a-los-objetos-perdidos-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El pez que devolvía los objetos perdidos</h3>
+<p>En las aguas profundas del río Mamoré vivía...</p>
+<button class="btn boton-leer" data-bs-target="#cuento9" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento9" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El pez que devolvía los objetos perdidos</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las aguas profundas del río Mamoré vivía un pez de escamas doradas que tenía el hábito de recoger todo lo que caía al río y devolverlo a quien lo había perdido, siempre y cuando esa persona se acercara con honestidad y pidiera lo suyo sin exigir. Si alguien mentía sobre lo que era suyo, el pez simplemente desaparecía y el objeto nunca volvía a verse. Se dice que un día, un hombre rico afirmó que todo lo que el pez había recogido era suyo. El pez lo miró y dijo: “Lo que no es tuyo, no te hace falta”, y se hundió en lo más profundo del río para no volver a aparecer en mucho tiempo.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda17-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-r-o-que-se-llev-las-palabras-de-mentira">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-r-o-que-se-llev-las-palabras-de-mentira-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El río que se llevó las palabras de mentira</h3>
+<p>Los ancianos chiquitanos cuentan que en tiempos antiguos...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda17" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda17" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El río que se llevó las palabras de mentira</h5>
+&gt;
+                                <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Los ancianos chiquitanos cuentan que en tiempos antiguos, el río Grande era tan claro que podía escuchar lo que decían las personas a sus orillas. Si alguien decía la verdad, el agua fluía tranquila y cristalina. Pero si alguien mentía, el río se agitaba y se enturbiaba, llevándose consigo las palabras falsas para que no contaminaran la tierra. Un día, un hombre mintió sobre algo muy importante y el río se oscureció durante años. Cuando por fin el hombre confesó su falta y pidió perdón sinceramente, el agua recuperó su claridad. Desde entonces, se dice que el río no juzga, simplemente limpia lo que ensucia la convivencia entre personas.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--leyenda18-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-doncella-de-las-frutas-silvestres">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-doncella-de-las-frutas-silvestres-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La doncella de las frutas silvestres</h3>
+<p>En las orillas del río Guapay vivía una joven que conocía el secreto de cada planta del bosque...</p>
+<button class="btn boton-leer" data-bs-target="#leyenda18" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="leyenda18" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La doncella de las frutas silvestres</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las orillas del río Guapay vivía una joven que conocía el secreto de cada planta del bosque. Sabía cuáles alimentaban, cuáles curaban y cuáles debían evitarse. Nunca cobró por su conocimiento, solo pedía que antes de recoger algo, se dieran las gracias a la tierra que lo había hecho crecer. Unos forasteros quisieron obligarla a revelar dónde estaban los árboles más valiosos para cortarlos. Ella se negó con calma y caminó hacia el río diciendo: “Lo que la tierra nos presta, no nos pertenece para venderlo”. Al llegar a la orilla, desapareció en el agua sin dejar rastro, pero cada vez que alguien da gracias antes de recoger del monte, se dice que ella sonríe desde el bosque.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

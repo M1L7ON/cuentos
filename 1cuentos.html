@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Raíces de Bolivia | Cuentos, mitos y leyendas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="2cuentos.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark barra">
+<div class="container">
+<a class="navbar-brand marca" href="#">
+<img alt="logo" class="logo" src="logo.png"/>
+<span>Raíces de Bolivia</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Categoría</button>
+<ul class="dropdown-menu menu-oscuro">
+<li><button class="dropdown-item"><a class="dropdown-item" href="1cuentos.html">Cuentos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1mitos.html">Mitos</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="1leyendas.html">Leyendas</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<div class="nav-item dropdown">
+<button class="btn boton-nav dropdown-toggle" data-bs-toggle="dropdown">Departamentos</button>
+<ul class="dropdown-menu menu-oscuro departamentos">
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dlapaz.html">La Paz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dscz.html">Santa Cruz</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dcbba.html">Cochabamba</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Doruro.html">Oruro</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpotosi.html">Potosí</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dchuquisaca.html">Chuquisaca</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dtarija.html">Tarija</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dbeni.html">Beni</a></button></li>
+<li><button class="dropdown-item"><a class="dropdown-item" href="Dpando.html">Pando</a></button></li>
+<li><hr class="dropdown-divider"/></li>
+</ul>
+</div>
+<button"><a class="btn boton-nav" href="3audiolibro.html">🎧 Audiolibros</a>
+</button"></div>
+</div>
+</div>
+</nav>
+<!-- Portada -->
+<header class="portada">
+<div class="capa"></div>
+<div class="container contenido-portada">
+<center>
+<p class="bienvenida">Historias que viven en nuestra memoria</p>
+<h1><span>CUENTOS</span></h1>
+<p class="texto-portada">Descubre cuentos tradicionales llenos de aventuras y enseñanzas que forman parte de la memoria de nuestros pueblos.</p>
+</center>
+</div>
+</header>
+<!-- Buscador -->
+<section class="container buscador-seccion">
+<div class="buscador">
+<span class="lupa">⌕</span>
+<input id="busqueda" oninput="buscarHistorias()" placeholder="Busca un cuento, mito o leyenda..." type="text"/>
+<button class="btn boton-buscar" onclick="buscarHistorias()">Buscar</button>
+</div>
+<p class="mensaje" id="mensaje"></p>
+<div class="resultados-busqueda" id="resultados-busqueda"></div>
+</section>
+<!-- Historias destacadas -->
+<main class="container seccion" id="destacados">
+<div class="titulo-seccion">
+<p class="sobre-titulo">Historias que viven en nuestra memoria</p>
+<h2>Cuentos bolivianos</h2>
+<p>Relatos llenos de aventuras, enseñanzas y personajes que mantienen viva la imaginación y las tradiciones de Bolivia.</p>
+<div class="adorno"></div>
+</div>
+<div class="row g-4" id="tarjetas">
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-c-ndor-que-se-enamor-de-una-pastora">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-c-ndor-que-se-enamor-de-una-pastora-la-paz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · La Paz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El cóndor que se enamoró de una pastora</h3>
+<p>Cerca de las orillas del lago sagrado, vivía una joven pastora que cantaba tan dulce...</p>
+<button class="btn boton-leer" data-bs-target="#cuento1" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento1" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El cóndor que se enamoró de una pastora</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cerca de las orillas del lago sagrado, vivía una joven pastora que cantaba tan dulce que hasta las aves se posaban para escucharla. Un cóndor majestuoso escuchó su canto y, transformándose en un joven apuesto, bajó cada tarde para estar junto a ella.La joven le correspondió, pero cuando él quiso presentarse ante su familia, ella tuvo miedo y lo rechazó. <br/>El cóndor volvió a su forma y voló hacia las cumbres más altas. La joven, arrepentida, lo llamó día tras día hasta que se convirtió en una roca con forma de mujer mirando hacia los picos nevados. Dicen que cuando el viento sopla desde el lago, aún se escucha su canto suave y triste.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto2-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="Oruro" data-tipo="Leyenda">
+<article class="tarjeta" id="el-zorro-que-enamor-a-la-pastora">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-zorro-que-enamor-a-la-pastora-oruro.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Oruro</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El zorro que enamoró a la pastora</h3>
+<p>Entre las comunidades de los Urus, cerca del lago Poopó...</p>
+<button class="btn boton-leer" data-bs-target="#cuento2" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento2" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El zorro que enamoró a la pastora</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Entre las comunidades de los Urus, cerca del lago Poopó, cuentan que una joven pastora vivía sola con sus ovejas. No hablaba con nadie, pero cada noche un joven de blanco vestido llegaba a su puerta con un charango y le cantaba canciones tan hermosas que la luna misma parecía detenerse a escucharlo. Siempre se iba antes del amanecer. Una noche, la muchacha decidió retenerlo y cerró la puerta antes de que él partiera. Al salir el sol, el joven desapareció y en su lugar quedó un zorro con una quijada de burro en el hocico. Comprendió entonces que él era un espíritu de la naturaleza que solo podía visitar la oscuridad. Desde ese día, ella no intentó retenerlo más; simplemente esperaba cada noche, sabiendo que algunas presencias son más bellas cuando se las deja ser libres.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto3-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-semilla-que-viaj-hasta-las-estrellas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-semilla-que-viaj-hasta-las-estrellas-potos.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Potosí</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La semilla que viajó hasta las estrellas</h3>
+<p>Hace mucho tiempo, cuando las semillas aún hablaban con las personas...</p>
+<button class="btn boton-leer" data-bs-target="#cuento3" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento3" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La semilla que viajó hasta las estrellas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Hace mucho tiempo, cuando las semillas aún hablaban con las personas, una pequeña semilla de quinua le preguntó a una anciana: "¿Puedo crecer más alto que los cerros?". La anciana sonrió y dijo: "No necesitas ser alta para llegar lejos. Mira cómo caes en la tierra, te haces pequeña y luego das vida a muchos". La semilla no entendió del todo, pero confió. Se dejó caer, se cubrió de tierra y, con el sol y la lluvia, brotó. No creció más alta que los cerros, pero sus granos alimentaron a generaciones enteras. Y cada grano que caía, viajaba en manos de alguien más, hasta que la semilla que quiso llegar a las estrellas, llegó a cada rincón de los Andes sin haber dejado nunca la tierra.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuento 4-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-camino-que-se-hac-a-solo">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-camino-que-se-hac-a-solo-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El camino que se hacía solo</h3>
+<p>En las montañas de Totora, hay un sendero que aparece y desaparece...</p>
+<button class="btn boton-leer" data-bs-target="#cuento4" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento4" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El camino que se hacía solo</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las montañas de Totora, hay un sendero que aparece y desaparece según quien lo transite. Cuentan que un campesino anciano caminaba cargado de leña cuando vio a un viajero perdido y cansado que no encontraba el rumbo. Sin dudarlo, el anciano dejó su carga y lo guió hasta el pueblo. Al regresar, notó que el camino que habían tomado se había ensanchado y suavizado. Al día siguiente, otros intentaron usarlo pero el sendero se había vuelto estrecho y difícil. Comprendieron entonces que el camino no es algo que está ahí afuera, sino algo que se construye con cada acto de bondad.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuento5-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="elas-semillas-que-cantaban-bajo-tierra">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('elas-semillas-que-cantaban-bajo-tierra-cochabamba.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Cochabamba</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>Las semillas que cantaban bajo tierra</h3>
+<p>Antes de sembrar, los abuelos de Cochabamba cantaban...</p>
+<button class="btn boton-leer" data-bs-target="#cuento5" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento5" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">Las semillas que cantaban bajo tierra</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Antes de sembrar, los abuelos de Cochabamba cantaban a las semillas antes de entregarlas a la tierra. Un joven que no entendía esto pensó que era una pérdida de tiempo y sembró sin cantar. Cuando brotaron, sus plantas crecieron altas pero no dieron fruto. Avergonzado, fue a ver a su abuelo y le preguntó qué había hecho mal. El anciano le dijo: "La tierra no solo necesita semillas, necesita saber que alguien las espera con cariño. Canta antes de sembrar, no porque la tierra tenga oídos, sino porque tu corazón necesita recordar que lo que das, vuelve a ti". El joven lo hizo así al año siguiente, y su cosecha fue la más abundante de toda la región.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto6-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="la-semilla-del-algarrobo-que-no-quer-a-germinar">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('la-semilla-del-algarrobo-que-no-quer-a-germinar-tarija.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · tarija</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>La semilla del algarrobo que no quería germinar</h3>
+<p>Un campesino guaraní plantó una semilla de algarrobo...</p>
+<button class="btn boton-leer" data-bs-target="#cuento6" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento6" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">La semilla del algarrobo que no quería germinar</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Un campesino guaraní plantó una semilla de algarrobo, pero pasaron los meses y no brotaba. Impaciente, cavó para ver qué ocurría y encontró que la semilla había echado raíces profundas y fuertes hacia abajo, aunque nada se veía arriba. Su abuelo, que lo observaba, le dijo: “No te apresures a juzgar lo que no ves. Lo que sostiene lo que crece nunca se muestra primero”. El joven volvió a cubrirla con tierra y esperó con paciencia. Poco después, un brote pequeño pero firme apareció. Con los años, se convirtió en el árbol más grande y resistente de toda la región, porque lo que crece despacio, arraiga con fuerza.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto7-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-rbol-que-daba-sombra-solo-a-los-cansados">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-rbol-que-daba-sombra-solo-a-los-cansados-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El árbol que daba sombra solo a los cansados</h3>
+<p>En la inmensidad de los bosques de la Chiquitania...</p>
+<button class="btn boton-leer" data-bs-target="#cuento7" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento7" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El árbol que daba sombra solo a los cansados</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En la inmensidad de los bosques de la Chiquitania crecía un árbol enorme y antiguo. Los viajeros decían que si llegabas lleno de orgullo y prisa, su copa parecía alejarse y no daba sombra. Pero si llegabas cansado, humilde y con el corazón tranquilo, su sombra se ensanchaba como abrazándote, y debajo de él siempre había aire fresco y frutos maduros. Muchos buscaron el árbol para cortarlo y vender su madera, pero nunca lo encontraron. Se dice que solo se deja hallar por quienes necesitan descansar, no por quienes quieren aprovecharse de él.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto8-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-fuego-que-respet-el-nido">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-fuego-que-respet-el-nido-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El fuego que respetó el nido</h3>
+<p>Cuentan los pueblos de la Amazonía cruceña...</p>
+<button class="btn boton-leer" data-bs-target="#cuento8" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento8" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El fuego que respetó el nido</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan los pueblos de la Amazonía cruceña que hace mucho tiempo, un gran incendio recorría la selva impulsado por vientos fuertes. Todos los animales huían, pero un pajarillo pequeño se quedó volando de un lado a otro, llevando gotas de agua en su pico para apagar el fuego. Los animales más grandes le dijeron que era inútil, que no podía lograr nada. El pajarillo respondió: “Sé que no puedo apagarlo solo, pero hago mi parte porque este es mi hogar”. El fuego, al ver su valentía, se detuvo justo antes de llegar a su nido con los huevos recién puestos. Y alrededor de ese lugar, la vegetación se recuperó más rápido y más verde que en cualquier otro sitio.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto9-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-pez-que-devolv-a-los-objetos-perdidos">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-pez-que-devolv-a-los-objetos-perdidos-santa-cruz.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Santa Cruz</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El pez que devolvía los objetos perdidos</h3>
+<p>En las aguas profundas del río Mamoré vivía...</p>
+<button class="btn boton-leer" data-bs-target="#cuento9" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento9" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El pez que devolvía los objetos perdidos</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">En las aguas profundas del río Mamoré vivía un pez de escamas doradas que tenía el hábito de recoger todo lo que caía al río y devolverlo a quien lo había perdido, siempre y cuando esa persona se acercara con honestidad y pidiera lo suyo sin exigir. Si alguien mentía sobre lo que era suyo, el pez simplemente desaparecía y el objeto nunca volvía a verse. Se dice que un día, un hombre rico afirmó que todo lo que el pez había recogido era suyo. El pez lo miró y dijo: “Lo que no es tuyo, no te hace falta”, y se hundió en lo más profundo del río para no volver a aparecer en mucho tiempo.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto10-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-jaguar-que-no-comi-al-viajero">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-jaguar-que-no-comi-al-viajero-beni.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Beni</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El jaguar que no comió al viajero</h3>
+<p>Un viajero cruzó una selva densa...</p>
+<button class="btn boton-leer" data-bs-target="#cuento10" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento10" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El jaguar que no comió al viajero</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Un viajero cruzó una selva densa y cayó herido al caer en una trampa olvidada. Al anochecer, vio acercarse un jaguar enorme. Cerró los ojos esperando lo peor, pero el animal simplemente se sentó a su lado y le lamió la herida suavemente, luego se quedó vigilando mientras él descansaba. A la mañana siguiente, el jaguar se fue sin hacerle daño. El hombre comprendió que el miedo nos hace imaginar enemigos donde solo hay otra forma de vivir. Desde ese día, nunca más cazó un animal y enseñó a su gente a compartir la tierra con los demás seres que la habitan.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto11-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-mono-que-guardaba-el-secreto-de-las-plantas">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-mono-que-guardaba-el-secreto-de-las-plantas-pando.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Pando</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El mono que guardaba el secreto de las plantas</h3>
+<p>Cuentan que antes de que llegaran los caminos...</p>
+<button class="btn boton-leer" data-bs-target="#cuento11" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento11" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El mono que guardaba el secreto de las plantas</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Cuentan que antes de que llegaran los caminos, un mono de pelaje dorado vivía en lo más alto de los árboles y conocía el uso de cada planta medicinal del bosque. Cuando alguien enfermaba gravemente, los ancianos dejaban ofrendas de frutas en la base del árbol más alto y esperaban. Si el mono aceptaba el regalo, dejaba caer la planta exacta que se necesitaba. Cuando la gente empezó a cortar los árboles sin control, el mono dejó de bajar y se internó en lo más profundo de la selva. No se escondió por miedo, dicen los sabios, sino porque dejó de confiar en que cuidarían lo que él custodiaba.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--cuwnto12-->
+<div class="col-md-6 col-lg-4 historia" data-departamento="La Paz" data-tipo="Leyenda">
+<article class="tarjeta" id="el-r-o-que-ense-aba-a-escuchar">
+<div class="imagen imagen-1" style="background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.12)), url('el-r-o-que-ensenaba-a-escuchar-pando.svg'); background-size: cover; background-position: center;"><span class="etiqueta">Departamento · Pando</span><span class="icono-imagen">🏔️</span></div>
+<div class="tarjeta-cuerpo">
+<h3>El río que enseñaba a escuchar</h3>
+<p>Un joven preguntó a un anciano qué era lo más importante...</p>
+<button class="btn boton-leer" data-bs-target="#cuento12" data-bs-toggle="modal">
+                            Conocer historia<span>→</span>
+</button>
+</div>
+</article>
+<!-- Ventana del cuento -->
+<div class="modal fade" id="cuento12" tabindex="-1">
+<div class="modal-dialog modal-dialog-scrollable modal-lg">
+<div class="modal-content bg-dark text-warning">
+<div class="modal-header">
+<h5 class="modal-title">El río que enseñaba a escuchar</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body text-light">
+<p style="text-align: justify;">Un joven preguntó a un anciano qué era lo más importante que podía aprender del río que corría cerca de su aldea. El anciano lo llevó a la orilla y le pidió que escuchara sin hablar. Al principio el joven solo escuchó el murmullo del agua. Pero después de un largo rato, empezó a distinguir el viento, los pájaros, el movimiento de los peces y su propia respiración. “Eso es”, dijo el anciano. “El río no te enseña nada nuevo; simplemente te ayuda a escuchar lo que ya llevas dentro”.</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-warning" data-bs-dismiss="modal" type="button">
+                                    Cerrar cuento
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-center mt-4" hidden="" id="sin-resultados">No encontramos historias con esa búsqueda.</p>
+</main>
+<!--boton de inicio-->
+<a class="btn-inicio" href="index.html">VOLVER A INICIO</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search-index.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
